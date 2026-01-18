@@ -20,13 +20,13 @@ public abstract class BasePage {
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     } //Явное ожидание, элемент кликабелен
 
-    //Конструктор
+    //КОНСТРУКТОР
     public BasePage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(DEFAULT_TIMEOUT_SECONDS));
     }
 
-    // Действия
+    //ДЕЙСТВИЯ
     protected void enterText(By locator, String text) {
         WebElement element = elementToBeClickable(locator);
         element.clear();
