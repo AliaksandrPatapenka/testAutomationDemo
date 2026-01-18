@@ -14,12 +14,11 @@ public abstract class BasePage {
     protected WebDriverWait wait;
 
     //ОЖИДАНИЯ И ЗАДЕРЖКИ
-    public WebElement waits(By locator) {
+    static final int DEFAULT_TIMEOUT_SECONDS = 10;
+
+    protected WebElement elementToBeClickable(By locator) {
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     } //Явное ожидание, элемент кликабелен
-
-    private final int DEFAULT_TIMEOUT_SECONDS = 10;
-
 
     //Конструктор
     public BasePage(WebDriver driver) {
@@ -29,13 +28,13 @@ public abstract class BasePage {
 
     // Действия
     protected void enterText(By locator, String text) {
-        WebElement element = waits(locator);
+        WebElement element = elementToBeClickable(locator);
         element.clear();
         element.sendKeys(text);
     } //Вод текста
 
     protected void clickButton(By locator) {
-        WebElement element = waits(locator);
+        WebElement element = elementToBeClickable(locator);
         element.click();
     } //Нажатие на кнопку
 }
