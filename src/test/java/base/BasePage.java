@@ -29,11 +29,6 @@ public abstract class BasePage {
 
     //ОЖИДАНИЯ И ЗАДЕРЖКИ
     /**
-     * Таймаут по умолчанию для явных ожиданий в секундах.
-     */
-    static final int DEFAULT_TIMEOUT_SECONDS = 10;
-
-    /**
      * Ожидает, пока элемент станет кликабельным.
      *
      * @param locator локатор элемента
@@ -46,12 +41,14 @@ public abstract class BasePage {
     //КОНСТРУКТОР
     /**
      * Конструктор базовой страницы.
+     * Инициализирует драйвер и объект явного ожидания с таймаутом,
+     * указанным в {@link TestData#DEFAULT_TIMEOUT_SECONDS}.
      *
      * @param driver экземпляр WebDriver
      */
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(DEFAULT_TIMEOUT_SECONDS));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(TestData.DEFAULT_TIMEOUT_SECONDS));
     }
 
     //ДЕЙСТВИЯ
@@ -77,4 +74,7 @@ public abstract class BasePage {
         WebElement element = elementToBeClickable(locator);
         element.click();
     }
+
+    //МЕТОДЫ ПОЛУЧЕНИЯ ДАННЫХ
+
 }

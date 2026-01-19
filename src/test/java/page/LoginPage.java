@@ -3,6 +3,7 @@ package page;
 import base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class LoginPage extends BasePage {
@@ -144,4 +145,10 @@ public class LoginPage extends BasePage {
                 ExpectedConditions.elementToBeClickable(passwordField),
                 ExpectedConditions.elementToBeClickable(loginButton)));
     }
+
+    public String getText() {
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(langButton));
+        return element.getAttribute("class");
+    }
+
 }

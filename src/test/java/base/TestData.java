@@ -8,4 +8,6 @@ public final class TestData {
     public static final String INVALID_PASSWORD = System.getProperty("invalid.password", "4321");
     public static final String LANGUAGE_CODE = System.getProperty("language.code", "rus");
 
+    public static final int DEFAULT_TIMEOUT_SECONDS = 10;
+
 }
