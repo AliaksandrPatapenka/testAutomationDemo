@@ -20,5 +20,5 @@ public class TestBase {
         if (driver != null) {
             driver.quit();
         }
-    }//Проверка корректности драйвера
+    }//Закрытие браузера
 }
