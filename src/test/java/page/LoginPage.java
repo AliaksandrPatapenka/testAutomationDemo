@@ -7,68 +7,141 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class LoginPage extends BasePage {
 
-    //Локаторы
-    private final By usernameField = By.name("login"); //Поле Логин
-    private final By passwordField = By.name("password"); //Поле Пароль
-    private final By loginButton = By.cssSelector(".sign-in__button.j-button-submit"); //Кнопка авторизации
-    private final By langButton = By.id("language-flag"); //Кнопка раскрытия формы с доступными языками
+    //ЛОКАТОРЫ
+    /**
+     * Локатор поля для ввода логина.
+     */
+    private final By usernameField = By.name("login");
+    /**
+     * Локатор поля для ввода пароля.
+     */
+    private final By passwordField = By.name("password");
+    /**
+     * Локатор кнопки авторизации.
+     */
+    private final By loginButton = By.cssSelector(".sign-in__button.j-button-submit");
+    /**
+     * Локатор кнопки раскрытия списка доступных языков.
+     */
+    private final By langButton = By.id("language-flag");
+    /**
+     * Возвращает локатор кнопки выбора языка по его коду.
+     *
+     * @param langCode код языка (например, "en", "ru")
+     * @return локатор By для выбранного языка
+     */
     private By langButtonByCode(String langCode) {
         return By.cssSelector("a[data-id='" + langCode + "']");
-    } //Метод извлечения доступных локализаций
-    private final By footerLink = By.className("footer__link"); //Кнопка открытия пользовательского соглашения
+    }
+    /**
+     * Локатор ссылки в подвале страницы (пользовательское соглашение).
+     */
+    private final By footerLink = By.className("footer__link");
 
     //КОНСТРУКТОР
+    /**
+     * Конструктор страницы авторизации.
+     *
+     * @param driver экземпляр WebDriver
+     */
     public LoginPage(WebDriver driver) {
         super(driver);
     }
 
     //МЕТОДЫ ДЕЙСТВИЙ
+    /**
+     * Открывает страницу входа в приложение.
+     * В случае ошибки соединения выводит сообщение в консоль.
+     */
     public void open() {
-        driver.get(BASE_URL + "/login");
-        waitPage();
-    }//Открываем  тестируемую страницу
+        try {
+            driver.get(BASE_URL + "/login");
+            waitPage();
+        } catch (Exception e) {
+            System.out.println("❌ Сервер не отвечает");
+        }
+    }
 
+    /**
+     * Вводит логин в соответствующее поле.
+     *
+     * @param username логин пользователя
+     */
     private void enterUsername(String username) {
         enterText(usernameField, username);
-    }//Вводим логин
+    }
 
+    /**
+     * Вводит пароль в соответствующее поле.
+     *
+     * @param password пароль пользователя
+     */
     private void enterPassword(String password) {
         enterText(passwordField, password);
-    }//Вводим пароль
+    }
 
+    /**
+     * Нажимает кнопку авторизации.
+     */
     private void clickLoginButton() {
         clickButton(loginButton);
-    }//Нажимаем на кнопку Авторизации
+    }
 
+    /**
+     * Нажимает кнопку раскрытия списка языков.
+     */
     private void clickLanguageButton() {
         clickButton(langButton);
-    }//Нажатие на элемент раскрытия формы с доступными локализациями
+    }
 
+    /**
+     * Выбирает язык интерфейса по коду.
+     *
+     * @param langCode код языка для выбора
+     */
     private void clickLanguage(String langCode) {
         clickButton(langButtonByCode(langCode));
-    }//Нажатие на кнопку нужной локализации
+    }
 
+    /**
+     * Нажимает ссылку в подвале страницы (пользовательское соглашение).
+     */
     public  void  clickFooterLink() {
         clickButton(footerLink);
-    }//Нажимаем на кнопку открытия формы пользовательского соглашения
+    }
 
     //КОМПОЗИТНЫЕ МЕТОДЫ
+    /**
+     * Выполняет авторизацию пользователя.
+     *
+     * @param username логин пользователя
+     * @param password пароль пользователя
+     */
     public void login(String username, String password) {
         enterUsername(username);
         enterPassword(password);
         clickLoginButton();
-    }//Авторизация
+    }
 
+    /**
+     * Выбирает язык интерфейса.
+     *
+     * @param langCode код языка для выбора
+     */
     public void selectLanguage(String langCode) {
         clickLanguageButton();
         clickLanguage(langCode);
-    } //Выбор локализации
+    }
 
     //МЕТОДЫ ПРОВЕРОК
+    /**
+     * Ожидает готовности страницы к взаимодействию.
+     * Ожидает, пока поля логина, пароля и кнопка авторизации станут кликабельными.
+     */
     public void waitPage() {
         wait.until(ExpectedConditions.and(
                 ExpectedConditions.elementToBeClickable(usernameField),
                 ExpectedConditions.elementToBeClickable(passwordField),
                 ExpectedConditions.elementToBeClickable(loginButton)));
-    }//Поля Логин и Пароль, кнопка авторизации становятся кликабельны
+    }
 }
