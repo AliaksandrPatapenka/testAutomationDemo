@@ -22,6 +22,8 @@ public abstract class BasePage {
      * Экземпляр WebDriver для управления браузером.
      * Экземпляр WebDriverWait для явных ожиданий.
      */
+    public String USER_LOGIN = "user";
+    public  String USER_PASSWORD = "1234";
     protected WebDriver driver;
     protected WebDriverWait wait;
 

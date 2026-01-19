@@ -1,6 +1,7 @@
 package test;
 
 import base.TestBase;
+import base.TestData;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -46,7 +47,13 @@ public class LoginTest extends TestBase {
     @Test
     @DisplayName("Выбор локализации")
     public void selectLanguage(){
-        loginPage.selectLanguage("LANGUAGE");
+        loginPage.selectLanguage(TestData.LANGUAGE);
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            throw new RuntimeException("Test wait interrupted", e);
+        }
     }
 
     /**
@@ -68,7 +75,13 @@ public class LoginTest extends TestBase {
     @Test
     @DisplayName("Проверка авторизации с валидными данными")
     public void successfulLogin(){
-        loginPage.login("USER-LOGIN", "USER-PASSWORD");
+        loginPage.login(TestData.USER_LOGIN, TestData.USER_PASSWORD);
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            throw new RuntimeException("Test wait interrupted", e);
+        }
     }
 
     /**
@@ -80,7 +93,7 @@ public class LoginTest extends TestBase {
     @Test
     @DisplayName("Проверка авторизации с невалидным логином")
     public void authInvalidLogin() {
-        loginPage.login("INVALID-LOGIN", "USER-PASSWORD");
+        loginPage.login(TestData.INVALID_LOGIN, TestData.USER_PASSWORD);
     }
 
     /**
@@ -92,7 +105,7 @@ public class LoginTest extends TestBase {
     @Test
     @DisplayName("Проверка авторизации с невалидным паролем")
     public void authInvalidPassword() {
-        loginPage.login("USER-LOGIN", "INVALID-PASSWORD");
+        loginPage.login(TestData.USER_LOGIN, TestData.INVALID_PASSWORD);
     }
 
     /**
@@ -104,6 +117,6 @@ public class LoginTest extends TestBase {
     @Test
     @DisplayName("Проверка авторизации с некорректными логином и паролем")
     public void authInvalidLoginPassword(){
-        loginPage.login("INVALID-LOGIN", "INVALID-PASSWORD");
+        loginPage.login(TestData.INVALID_LOGIN, TestData.INVALID_PASSWORD);
     }
 }
