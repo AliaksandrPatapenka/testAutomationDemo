@@ -47,7 +47,7 @@ public class LoginTest extends TestBase {
     @Test
     @DisplayName("Выбор локализации")
     public void selectLanguage(){
-        loginPage.selectLanguage(TestData.LANGUAGE);
+        loginPage.selectLanguage(TestData.LANGUAGE_CODE);
         try {
             Thread.sleep(10000);
         } catch (InterruptedException e) {
