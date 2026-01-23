@@ -11,7 +11,7 @@ import java.time.Duration;
  * Абстрактный базовый класс для всех страниц.
  * Содержит общие методы и константы для работы с WebDriver.
  */
-public abstract class BasePage {
+public abstract class BasePage  {
     /**
      * Базовый URL приложения.
      * Значение по умолчанию: "http://localhost:5001".
@@ -22,42 +22,30 @@ public abstract class BasePage {
      * Экземпляр WebDriver для управления браузером.
      * Экземпляр WebDriverWait для явных ожиданий.
      */
-    public String USER_LOGIN = "user";
-    public  String USER_PASSWORD = "1234";
     protected WebDriver driver;
     protected WebDriverWait wait;
 
-    //ОЖИДАНИЯ И ЗАДЕРЖКИ
     /**
-     * Ожидает, пока элемент станет кликабельным.
-     *
-     * @param locator локатор элемента
-     * @return кликабельный WebElement
+     * ОЖИДАНИЯ И ЗАДЕРЖКИ
      */
     protected WebElement elementToBeClickable(By locator) {
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
-    //КОНСТРУКТОР
+    protected WebElement visibilityOfElementLocated(By locator){
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
     /**
-     * Конструктор базовой страницы.
-     * Инициализирует драйвер и объект явного ожидания с таймаутом,
-     * указанным в {@link TestData#DEFAULT_TIMEOUT_SECONDS}.
-     *
-     * @param driver экземпляр WebDriver
+     * КОНСТРУКТОР
      */
     public BasePage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(TestData.DEFAULT_TIMEOUT_SECONDS));
     }
 
-    //ДЕЙСТВИЯ
     /**
-     * Вводит текст в поле, найденное по локатору.
-     * Перед вводом очищает поле.
-     *
-     * @param locator локатор текстового поля
-     * @param text текст для ввода
+     * МЕТОДЫ ДЕЙСТВИЙ
      */
     protected void enterText(By locator, String text) {
         WebElement element = elementToBeClickable(locator);
@@ -65,16 +53,23 @@ public abstract class BasePage {
         element.sendKeys(text);
     }
 
-    /**
-     * Кликает по элементу, найденному по локатору.
-     *
-     * @param locator локатор элемента для клика
-     */
     protected void clickButton(By locator) {
         WebElement element = elementToBeClickable(locator);
         element.click();
     }
 
-    //МЕТОДЫ ПОЛУЧЕНИЯ ДАННЫХ
+    /**
+     * МЕТОДЫ ПОЛУЧЕНИЯ ДАННЫХ
+     */
+    public boolean isElementEnabled(By locator) {
+        WebElement element = elementToBeClickable(locator);
+        return element.isEnabled();
+    }
+
+    public String getText(By locator) {
+        WebElement element = visibilityOfElementLocated(locator);
+        return element.getText();
+    }
+
 
 }

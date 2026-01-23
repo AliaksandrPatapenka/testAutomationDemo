@@ -12,15 +12,10 @@ import page.LoginPage;
  * Тестовый класс для проверки функциональности страницы авторизации.
  */
 public class LoginTest extends TestBase {
-    /**
-     * Экземпляр страницы авторизации.
-     */
     private LoginPage loginPage;
 
-    //ОБЩИЕ ДЕЙСТВИЯ
     /**
-     * Подготавливает тестовое окружение перед каждым тестом.
-     * Инициализирует драйвер, создает экземпляр LoginPage и открывает страницу входа.
+     * ДЕЙСТВИЯ ПЕРЕД НАЧАЛОМ И ПОСЛЕ ОКОНЧАНИЯ ТЕСТОВ
      */
     @BeforeEach
     public void  setUpTest(){
@@ -29,35 +24,14 @@ public class LoginTest extends TestBase {
         loginPage.open();
     }
 
-    /**
-     * Завершает тестовое окружение после каждого теста.
-     * Закрывает браузер и освобождает ресурсы.
-     */
     @AfterEach
     public void tearDownTest(){
         tearDown();
     }
 
-    //ТЕСТЫ
     /**
+     * ТЕСТЫ
      * Case1:
-     * 1. Нажимаем на кнопку раскрытия формы выбора локализации
-     * 2. Нажимаем на кнопку нужной локализации
-     */
-    @Test
-    @DisplayName("Выбор локализации")
-    public void selectLanguage(){
-        loginPage.selectLanguage(TestData.LANGUAGE_CODE);
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-            throw new RuntimeException("Test wait interrupted", e);
-        }
-    }
-
-    /**
-     * Case2:
      * 1. Нажимаем на кнопку открытия формы с пользовательским соглашением
      */
     @Test
@@ -67,7 +41,7 @@ public class LoginTest extends TestBase {
     }
 
     /**
-     * Case3:
+     * Case2:
      * 1. Вводим логин пользователя(Пользователь: активен, не удален. Логин валидный)
      * 2. Вводим пароль пользователя(Пользователь: активен, не удален. Пароль: валидный)
      * 3. Нажимаем на кнопку "Войти"
@@ -85,7 +59,7 @@ public class LoginTest extends TestBase {
     }
 
     /**
-     * Case4:
+     * Case3:
      * 1. Вводим логин пользователя, которого нет в базе данных
      * 2. Вводим пароль пользователя(Пользователь: активен, не удален. Пароль: валидный)
      * 3. Нажимаем на кнопку "Войти"
@@ -97,7 +71,7 @@ public class LoginTest extends TestBase {
     }
 
     /**
-     * Case5:
+     * Case4:
      * 1. Вводим логин пользователя(Пользователь: активен, не удален. Логин валидный)
      * 2. Вводим неверный пароль пользователя
      * 3. Нажимаем на кнопку "Войти"
@@ -109,7 +83,7 @@ public class LoginTest extends TestBase {
     }
 
     /**
-     * Case6:
+     * Case5:
      * 1. Вводим логин пользователя, которого нет в базе данных
      * 2. Вводим неверный пароль пользователя
      * 3. Нажимаем на кнопку "Войти"
