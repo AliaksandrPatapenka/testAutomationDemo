@@ -15,7 +15,7 @@ public final class TestData {
     public static final String EXPECTED_TEXT_LANGUAGE_RUS = "Русский";
 
     public  static final String EXPECTED_TEXT_AUTH_INVALID = System.getProperty("auth.invalid", "sldfakldlklk");
-    public  static final String EXPECTED_TEXT_AUTH = System.getProperty("auth", "ewrlkwjherlk");
+    public  static final String EXPECTED_TEXT_AUTH = System.getProperty("auth.success", "ewrlkwjherlk");
 
     public static final int DEFAULT_TIMEOUT = 10;
 
