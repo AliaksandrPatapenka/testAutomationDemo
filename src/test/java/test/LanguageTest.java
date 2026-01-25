@@ -5,6 +5,9 @@ import base.TestData;
 import org.junit.jupiter.api.*;
 import page.LanguageSelectComponent;
 
+/**
+ * Язык интерфейса. Тесты
+ */
 public class LanguageTest extends TestBase {
     private LanguageSelectComponent languageSelectComponent;
 

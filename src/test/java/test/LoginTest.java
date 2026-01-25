@@ -6,7 +6,7 @@ import org.junit.jupiter.api.*;
 import page.LoginPage;
 
 /**
- * Тестовый класс для проверки функциональности страницы авторизации.
+ * Авторизация. Тесты
  */
 public class LoginTest extends TestBase {
     private LoginPage loginPage;

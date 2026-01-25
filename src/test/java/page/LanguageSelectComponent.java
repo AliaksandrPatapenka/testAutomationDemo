@@ -4,6 +4,9 @@ import base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+/**
+ * Компонент для выбора языка интерфейса. Элементы и действия
+ */
 public class LanguageSelectComponent extends BasePage {
     public LanguageSelectComponent(WebDriver driver) {
         super(driver);

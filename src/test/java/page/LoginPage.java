@@ -6,6 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+/**
+ * Элементы и действия страницы авторизации
+ */
 public class LoginPage extends BasePage {
     /**
      * КОНСТРУКТОР
