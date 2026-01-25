@@ -39,7 +39,7 @@ public class LoginTest extends TestBase {
      * 1. Нажимаем на кнопку открытия формы с пользовательским соглашением
      */
     @Test
-    @DisplayName("Нажатие на ссылку в подвале страницы")
+    @DisplayName("Case2.1: Нажатие на ссылку в подвале страницы")
     public void clickFooterLink() {
         loginPage.clickFooterLink();
         Assertions.assertTrue(loginPage.isFooterLinkClickable(), "Ссылка в футере должна быть кликабельной");
@@ -52,7 +52,7 @@ public class LoginTest extends TestBase {
      * 3. Нажимаем на кнопку "Войти"
      */
     @Test
-    @DisplayName("Проверка авторизации с невалидным логином")
+    @DisplayName("Case2.2: Проверка авторизации с невалидным логином")
     public void authInvalidLogin() {
         auth(TestData.INVALID_LOGIN, TestData.USER_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID, false);
     }
@@ -64,7 +64,7 @@ public class LoginTest extends TestBase {
      * 3. Нажимаем на кнопку "Войти"
      */
     @Test
-    @DisplayName("Проверка авторизации с невалидным паролем")
+    @DisplayName("Case2.3: Проверка авторизации с невалидным паролем")
     public void authInvalidPassword() {
         auth(TestData.USER_LOGIN, TestData.INVALID_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID, false);
     }
@@ -76,7 +76,7 @@ public class LoginTest extends TestBase {
      * 3. Нажимаем на кнопку "Войти"
      */
     @Test
-    @DisplayName("Проверка авторизации с некорректными логином и паролем")
+    @DisplayName("Case2.4: Проверка авторизации с некорректными логином и паролем")
     public void authInvalidLoginPassword(){
         auth(TestData.INVALID_LOGIN, TestData.INVALID_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID, false);
     }
@@ -88,7 +88,7 @@ public class LoginTest extends TestBase {
      * 3. Нажимаем на кнопку "Войти"
      */
     @Test
-    @DisplayName("Проверка успешной авторизации")
+    @DisplayName("Case2.2: Проверка успешной авторизации")
     public void authSusses(){
         auth(TestData.USER_LOGIN, TestData.USER_PASSWORD, TestData.EXPECTED_TEXT_AUTH, true);
 
