@@ -24,6 +24,11 @@ public class LanguageSelectComponent extends BasePage {
     /**
      * МЕТОДЫ ДЕЙСТВИЙ
      */
+
+    public void openTestPage(String path) {
+        openPage(path);
+    }
+
     private void clickLanguageButton() {
         elementToBeClickable(langButton);
         clickButton(langButton);

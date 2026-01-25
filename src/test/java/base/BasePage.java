@@ -1,8 +1,6 @@
 package base;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
@@ -12,16 +10,7 @@ import java.time.Duration;
  * Содержит общие методы и константы для работы с WebDriver.
  */
 public abstract class BasePage  {
-    /**
-     * Базовый URL приложения.
-     * Значение по умолчанию: "http://localhost:5001".
-     * Может быть переопределено системным свойством "base.url".
-     */
-    public static final String BASE_URL = System.getProperty("base.url", "http://localhost:5001");
-    /**
-     * Экземпляр WebDriver для управления браузером.
-     * Экземпляр WebDriverWait для явных ожиданий.
-     */
+
     protected WebDriver driver;
     protected WebDriverWait wait;
 
@@ -41,12 +30,18 @@ public abstract class BasePage  {
      */
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(TestData.DEFAULT_TIMEOUT_SECONDS));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(TestData.DEFAULT_TIMEOUT));
     }
 
     /**
      * МЕТОДЫ ДЕЙСТВИЙ
      */
+
+    public void openPage(String path) {
+        String url = TestData.BASE_URL + path;
+        driver.get(url);
+    }
+
     protected void enterText(By locator, String text) {
         WebElement element = elementToBeClickable(locator);
         element.clear();
@@ -61,15 +56,19 @@ public abstract class BasePage  {
     /**
      * МЕТОДЫ ПОЛУЧЕНИЯ ДАННЫХ
      */
-    public boolean isElementEnabled(By locator) {
-        WebElement element = elementToBeClickable(locator);
-        return element.isEnabled();
+    public boolean isElementClickable(By locator) {
+        try {
+            WebElement element = elementToBeClickable(locator);
+            return element.isEnabled();
+        } catch (TimeoutException e) {
+            return false; // Элемент не стал кликабельным за время ожидания
+        } catch (NoSuchElementException e) {
+            return false; // Элемент не найден вообще
+        }
     }
 
     public String getText(By locator) {
         WebElement element = visibilityOfElementLocated(locator);
         return element.getText();
     }
-
-
 }

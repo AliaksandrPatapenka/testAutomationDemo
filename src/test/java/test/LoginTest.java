@@ -2,10 +2,7 @@ package test;
 
 import base.TestBase;
 import base.TestData;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import page.LoginPage;
 
 /**
@@ -14,14 +11,22 @@ import page.LoginPage;
 public class LoginTest extends TestBase {
     private LoginPage loginPage;
 
-    /**
-     * ДЕЙСТВИЯ ПЕРЕД НАЧАЛОМ И ПОСЛЕ ОКОНЧАНИЯ ТЕСТОВ
-     */
+    private void auth(String userLogin, String userPassword, String expectedText, boolean isSuccess) {
+        loginPage.login(userLogin, userPassword);
+        String actualText;
+        if (isSuccess){
+            actualText = loginPage.getAutSuccess();
+        } else {
+            actualText = loginPage.getAuthInvalid();
+        }// если true, то успешная авторизация.
+        Assertions.assertEquals(expectedText, actualText, "Нет нужного текста");
+    }
+
     @BeforeEach
     public void  setUpTest(){
         setUp();
         loginPage = new LoginPage(driver);
-        loginPage.open();
+        loginPage.openPageLogin();
     }
 
     @AfterEach
@@ -38,28 +43,11 @@ public class LoginTest extends TestBase {
     @DisplayName("Нажатие на ссылку в подвале страницы")
     public void clickFooterLink() {
         loginPage.clickFooterLink();
+        Assertions.assertTrue(loginPage.isFooterLinkClickable(), "Ссылка в футере должна быть кликабельной");
     }
 
     /**
      * Case2:
-     * 1. Вводим логин пользователя(Пользователь: активен, не удален. Логин валидный)
-     * 2. Вводим пароль пользователя(Пользователь: активен, не удален. Пароль: валидный)
-     * 3. Нажимаем на кнопку "Войти"
-     */
-    @Test
-    @DisplayName("Проверка авторизации с валидными данными")
-    public void successfulLogin(){
-        loginPage.login(TestData.USER_LOGIN, TestData.USER_PASSWORD);
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-            throw new RuntimeException("Test wait interrupted", e);
-        }
-    }
-
-    /**
-     * Case3:
      * 1. Вводим логин пользователя, которого нет в базе данных
      * 2. Вводим пароль пользователя(Пользователь: активен, не удален. Пароль: валидный)
      * 3. Нажимаем на кнопку "Войти"
@@ -67,11 +55,11 @@ public class LoginTest extends TestBase {
     @Test
     @DisplayName("Проверка авторизации с невалидным логином")
     public void authInvalidLogin() {
-        loginPage.login(TestData.INVALID_LOGIN, TestData.USER_PASSWORD);
+        auth(TestData.INVALID_LOGIN, TestData.USER_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID, false);
     }
 
     /**
-     * Case4:
+     * Case3:
      * 1. Вводим логин пользователя(Пользователь: активен, не удален. Логин валидный)
      * 2. Вводим неверный пароль пользователя
      * 3. Нажимаем на кнопку "Войти"
@@ -79,11 +67,11 @@ public class LoginTest extends TestBase {
     @Test
     @DisplayName("Проверка авторизации с невалидным паролем")
     public void authInvalidPassword() {
-        loginPage.login(TestData.USER_LOGIN, TestData.INVALID_PASSWORD);
+        auth(TestData.USER_LOGIN, TestData.INVALID_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID, false);
     }
 
     /**
-     * Case5:
+     * Case4:
      * 1. Вводим логин пользователя, которого нет в базе данных
      * 2. Вводим неверный пароль пользователя
      * 3. Нажимаем на кнопку "Войти"
@@ -91,6 +79,19 @@ public class LoginTest extends TestBase {
     @Test
     @DisplayName("Проверка авторизации с некорректными логином и паролем")
     public void authInvalidLoginPassword(){
-        loginPage.login(TestData.INVALID_LOGIN, TestData.INVALID_PASSWORD);
+        auth(TestData.INVALID_LOGIN, TestData.INVALID_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID, false);
+    }
+
+    /**
+     * Case5:
+     * 1. Вводим логин пользователя(Пользователь: активен, не удален. Логин валидный)
+     * 2. Вводим пароль пользователя(Пользователь: активен, не удален. Пароль: валидный)
+     * 3. Нажимаем на кнопку "Войти"
+     */
+    @Test
+    @DisplayName("Проверка успешной авторизации")
+    public void authSusses(){
+        auth(TestData.USER_LOGIN, TestData.USER_PASSWORD, TestData.EXPECTED_TEXT_AUTH, true);
+
     }
 }

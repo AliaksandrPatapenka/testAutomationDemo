@@ -1,9 +1,9 @@
 package page;
 
 import base.BasePage;
+import base.TestData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class LoginPage extends BasePage {
@@ -25,13 +25,9 @@ public class LoginPage extends BasePage {
     /**
      * МЕТОДЫ ДЕЙСТВИЙ
      */
-    public void open() {
-        try {
-            driver.get(BASE_URL + "/login");
-            waitPage();
-        } catch (Exception e) {
-            System.out.println("❌ Сервер не отвечает");
-        }
+    public void openPageLogin() {
+        openPage(TestData.LOGIN);
+        waitPage();
     }
 
     private void enterUsername(String username) {
@@ -67,5 +63,19 @@ public class LoginPage extends BasePage {
                 ExpectedConditions.elementToBeClickable(usernameField),
                 ExpectedConditions.elementToBeClickable(passwordField),
                 ExpectedConditions.elementToBeClickable(loginButton)));
+    }
+
+    public boolean isFooterLinkClickable(){
+        return isElementClickable(footerLink);
+    }
+
+    public String getAuthInvalid(){
+        visibilityOfElementLocated(loginButton);// fake lokator
+        return getText(loginButton);//fake locator
+    }
+
+    public String getAutSuccess(){
+        visibilityOfElementLocated(loginButton);//fake locator
+        return  getText(loginButton);//fake locator
     }
 }
