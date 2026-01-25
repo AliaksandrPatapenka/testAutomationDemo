@@ -5,9 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LanguageSelectComponent extends BasePage {
-    /**
-     * Конструктор.
-     */
     public LanguageSelectComponent(WebDriver driver) {
         super(driver);
     }

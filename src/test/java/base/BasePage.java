@@ -5,14 +5,22 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
-/**
- * Абстрактный базовый класс для всех страниц.
- * Содержит общие методы и константы для работы с WebDriver.
- */
+    /**
+      * Абстрактный базовый класс для всех страниц.
+      * Содержит общие методы и константы для работы с WebDriver.
+      */
 public abstract class BasePage  {
 
     protected WebDriver driver;
     protected WebDriverWait wait;
+
+    /**
+     * КОНСТРУКТОР
+     */
+    public BasePage(WebDriver driver) {
+        this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(TestData.DEFAULT_TIMEOUT));
+    }
 
     /**
      * ОЖИДАНИЯ И ЗАДЕРЖКИ
@@ -23,14 +31,6 @@ public abstract class BasePage  {
 
     protected WebElement visibilityOfElementLocated(By locator){
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-    }
-
-    /**
-     * КОНСТРУКТОР
-     */
-    public BasePage(WebDriver driver) {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(TestData.DEFAULT_TIMEOUT));
     }
 
     /**
