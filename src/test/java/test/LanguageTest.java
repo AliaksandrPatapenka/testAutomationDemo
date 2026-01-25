@@ -27,7 +27,9 @@ public class LanguageTest extends TestBase {
     }
 
     /**
-     * ТЕСТЫ
+     * Case1.1
+     * 1. Нажимаем на кнопку, открывающую форму со списком доступных локализаций
+     * 2. Нажимаем кнопку выбора английской локализации
      */
     @Test
     @DisplayName("Выбор локализации ENG ")
@@ -35,6 +37,11 @@ public class LanguageTest extends TestBase {
         selectLanguage(TestData.LANGUAGE_ENG, TestData.EXPECTED_TEXT_LANGUAGE_ENG);
     }
 
+    /**
+     * Case 1.2
+     * 1. Нажимаем на кнопку, открывающую форму со списком доступных локализаций
+     * 2. Нажимаем кнопку выбора русской локализации
+     */
     @Test
     @DisplayName("Выбор локализации РУС")
     public void selectLanguageRus(){
