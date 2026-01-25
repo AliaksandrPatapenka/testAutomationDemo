@@ -1,5 +1,8 @@
 package base;
 
+/**
+ * Содержит константы и тестовые данные для тестов.
+ */
 public final class TestData {
 
     public static final String BASE_URL = System.getProperty("base.url", "http://localhost:5001");
