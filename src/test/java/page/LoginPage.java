@@ -24,12 +24,14 @@ public class LoginPage extends BasePage {
     private final By passwordField = By.name("password");
     private final By loginButton = By.cssSelector(".sign-in__button.j-button-submit");
     private final By footerLink = By.className("footer__link");
+    private final By authError = By.className("auth__error");
+    private final By logoutButton = By.id("logout");
 
     /**
      * МЕТОДЫ ДЕЙСТВИЙ
      */
     public void openPageLogin() {
-        openPage(TestData.LOGIN);
+        openPage(TestData.LOGIN_URL);
         waitPage();
     }
 
@@ -73,12 +75,12 @@ public class LoginPage extends BasePage {
     }
 
     public String getAuthInvalid(){
-        visibilityOfElementLocated(loginButton);// fake lokator
-        return getText(loginButton);//fake locator
+        visibilityOfElementLocated(authError);
+        return getText(authError);
     }
 
     public String getAutSuccess(){
-        visibilityOfElementLocated(loginButton);//fake locator
-        return  getText(loginButton);//fake locator
+        visibilityOfElementLocated(logoutButton);
+        return  getText(logoutButton);
     }
 }

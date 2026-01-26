@@ -31,7 +31,7 @@ public class LanguageTest extends TestBase {
         log.info(() -> "Начало настройки тестов");
         setUp();
         languageSelectComponent = new LanguageSelectComponent(driver);
-        languageSelectComponent.openTestPage(TestData.LOGIN);
+        languageSelectComponent.openTestPage(TestData.LOGIN_URL);
         log.info(() -> "Страница открыта, тесты готовы к выполнению");
     }
 

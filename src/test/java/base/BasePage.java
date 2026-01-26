@@ -33,7 +33,10 @@ public abstract class BasePage  {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    /**
+    protected boolean  invisibilityOfElementLocated(By locator){
+        return wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+    }
+        /**
      * МЕТОДЫ ДЕЙСТВИЙ
      */
 

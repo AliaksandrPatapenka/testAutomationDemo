@@ -20,6 +20,7 @@ public class LanguageSelectComponent extends BasePage {
     private By langButtonByCode(String langCode) {
         return By.cssSelector("a[data-id='" + langCode + "']");
     }
+    private  final By spinner = By.cssSelector("[id='spinner_overlay_page']");
 
     /**
      * МЕТОДЫ ДЕЙСТВИЙ
@@ -30,6 +31,12 @@ public class LanguageSelectComponent extends BasePage {
     }
 
     private void clickLanguageButton() {
+        invisibilityOfElementLocated(spinner);
+        try {
+            Thread.sleep(1000); // 800 мс
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
         elementToBeClickable(langButton);
         clickButton(langButton);
     }
