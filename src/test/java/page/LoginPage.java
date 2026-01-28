@@ -23,7 +23,6 @@ public class LoginPage extends BasePage {
     private final By usernameField = By.name("login");
     private final By passwordField = By.name("password");
     private final By loginButton = By.cssSelector(".sign-in__button.j-button-submit");
-    private final By footerLink = By.className("footer__link");
     private final By authError = By.className("auth__error");
     private final By logoutButton = By.id("logout");
 
@@ -47,10 +46,6 @@ public class LoginPage extends BasePage {
         clickButton(loginButton);
     }
 
-    public  void  clickFooterLink() {
-        clickButton(footerLink);
-    }
-
     /**
      * КОМПОЗИТНЫЕ МЕТОДЫ
      */
@@ -68,10 +63,6 @@ public class LoginPage extends BasePage {
                 ExpectedConditions.elementToBeClickable(usernameField),
                 ExpectedConditions.elementToBeClickable(passwordField),
                 ExpectedConditions.elementToBeClickable(loginButton)));
-    }
-
-    public boolean isFooterLinkClickable(){
-        return isElementClickable(footerLink);
     }
 
     public String getAuthInvalid(){

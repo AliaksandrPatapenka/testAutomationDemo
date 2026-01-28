@@ -3,10 +3,11 @@ package test;
 import base.TestBase;
 import base.TestData;
 import org.junit.jupiter.api.*;
-import org.junit.platform.commons.logging.LoggerFactory;
 import page.LanguageSelectComponent;
-import org.junit.jupiter.api.Test;
-import org.junit.platform.commons.logging.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 
 
 /**
@@ -17,27 +18,27 @@ public class LanguageTest extends TestBase {
     private static final Logger log = LoggerFactory.getLogger(LanguageTest.class);
 
     private void selectLanguage(String language, String expectedTextLanguage){
-        log.info(() -> "Нажимаем кнопку, открывающую форму с доступными языками: " + language);
+        log.info("Нажимаем кнопку, открывающую форму с доступными языками: {}", language);
         languageSelectComponent.selectLanguage(language);
-        log.info(() -> "Язык выбран, получаем текст кнопки");
+        log.info("✅ Язык выбран, получаем текст кнопки");
         String actualText = languageSelectComponent.getLanguageButtonText();
-        log.info(() -> "Ожидаемый текст: " + expectedTextLanguage + ", Фактический текст: " + actualText);
-        Assertions.assertEquals(expectedTextLanguage, actualText, "Язык не совпадает с выбранным");
-        log.info(() -> "Проверка выбора языка прошла успешно");
+        log.info(" Ожидаемый текст: {}, Фактический текст: {}", actualText, expectedTextLanguage);
+        Assertions.assertEquals(expectedTextLanguage, actualText, " ❌ Язык не совпадает с выбранным");
+        log.info("✅ Проверка выбора языка прошла успешно");
     }
 
     @BeforeEach
     public void setupTest() {
-        log.info(() -> "Начало настройки тестов");
+        log.info("Начало настройки тестов");
         setUp();
         languageSelectComponent = new LanguageSelectComponent(driver);
         languageSelectComponent.openTestPage(TestData.LOGIN_URL);
-        log.info(() -> "Страница открыта, тесты готовы к выполнению");
+        log.info("✅ Страница открыта, тесты готовы к выполнению");
     }
 
     @AfterEach
     public void tearDownTest(){
-        log.info(() -> "Завершение тестов. Очистка ресурсов");
+        log.info("Завершение тестов. Очистка ресурсов");
         tearDown();
     }
 
@@ -49,9 +50,9 @@ public class LanguageTest extends TestBase {
     @Test
     @DisplayName("Case1.1: Выбор локализации ENG ")
     public void selectLanguageEng(){
-        log.info(() -> "=== Case1.1: Выбор английской локализации ===");
+        log.info("=== Case1.1: Выбор английской локализации ===");
         selectLanguage(TestData.LANGUAGE_ENG, TestData.EXPECTED_TEXT_LANGUAGE_ENG);
-        log.info(() -> "=== Тест завершен успешно");
+        log.info("✅ Тест завершен успешно");
     }
 
     /**
@@ -62,8 +63,8 @@ public class LanguageTest extends TestBase {
     @Test
     @DisplayName("Case 1.2: Выбор локализации RUS")
     public void selectLanguageRus(){
-        log.info(() -> "=== Case 1.2: Выбор русской локализации ===");
+        log.info("=== Case 1.2: Выбор русской локализации ===");
         selectLanguage(TestData.LANGUAGE_RUS, TestData.EXPECTED_TEXT_LANGUAGE_RUS);
-        log.info(() -> "=== Тест завершен успешно ===");
+        log.info("✅ Тест завершен успешно");
     }
 }
