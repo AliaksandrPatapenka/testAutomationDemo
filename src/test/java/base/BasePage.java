@@ -57,7 +57,7 @@ public abstract class BasePage  {
     }
 
     /**
-     * МЕТОДЫ ПОЛУЧЕНИЯ ДАННЫХ
+     * МЕТОДЫ ПОЛУЧЕНИЯ ДАННЫХ.
      */
     public boolean isElementClickable(By locator) {
         try {

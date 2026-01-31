@@ -5,17 +5,18 @@ import base.TestData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import test.LanguageTest;
 
 /**
  * Элементы и действия страницы авторизации
  */
 public class LoginPage extends BasePage {
-    /**
-     * КОНСТРУКТОР
-     */
     public LoginPage(WebDriver driver) {
         super(driver);
     }
+    private static final Logger log = LoggerFactory.getLogger(LoginPage.class);
 
     /**
      * ЛОКАТОРЫ
