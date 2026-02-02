@@ -26,9 +26,6 @@ public class AuthHelper {
         }
 
         loginPage.login(TestData.USER_LOGIN, TestData.USER_PASSWORD);
-        //String actualText;
-        //actualText = loginPage.getAutSuccess();
-        //Assertions.assertEquals(expectedText, actualText, "Нет нужного текста");
         String token = (String) ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("return JSON.parse(localStorage.getItem('prop.sessionEntity')).token");
         Cookie sessionCookie = new Cookie.Builder("session", token).domain("localhost").path("/").isHttpOnly(true).build();
         driver.manage().addCookie(sessionCookie);
@@ -36,10 +33,7 @@ public class AuthHelper {
             for (Cookie cookie : allCookie) {
                 System.out.println("Имя: " + cookie.getName());
                 System.out.println("Значение: " + cookie.getValue());
-            }// Выводим все сыормированные Cookie
-
-       // Set<Cookie> testCookie = filterCookies(allCookie);
-        //testBase.tearDown();
+            }// Выводим все сформированные Cookie
         return allCookie;
 
 
