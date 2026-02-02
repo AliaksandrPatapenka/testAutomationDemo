@@ -2,12 +2,10 @@ package helpers;
 
 import base.TestBase;
 import base.TestData;
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import page.LoginPage;
 import org.openqa.selenium.Cookie;
 import java.util.Set;
-import org.openqa.selenium.JavascriptExecutor;
 
 public class AuthHelper {
     private AuthHelper(){} //Приватный конструктор - чтобы нельзя было создать объект этого класса. Все методы будут статическими, вызываем как AuthHelper.methodName()
