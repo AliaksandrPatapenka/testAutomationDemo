@@ -1,9 +1,13 @@
 package helpers;
 
 import base.TestBase;
+import base.TestData;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.devtools.v120.network.model.Cookie;
+import page.LoginPage;
+import org.openqa.selenium.Cookie;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 public class AuthHelper {
@@ -11,9 +15,38 @@ public class AuthHelper {
 
     public static Set<Cookie> getAuthCookie () {
         TestBase testBase = new TestBase();
+
         testBase.setUp();
-        return Cookies;
+        WebDriver driver = testBase.getDriver(); // Создаем экземпляр драйвера для TestBase
+        driver.manage().deleteAllCookies();//Удаляем старые куки
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.openPageLogin();
+        loginPage.login(TestData.USER_LOGIN, TestData.USER_PASSWORD);
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+        String token = (String) ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("return JSON.parse(localStorage.getItem('prop.sessionEntity')).token");
+        Cookie sessionCookie = new Cookie.Builder("session", token)
+                .domain(TestData.BASE_URL).path("/")
+                .isHttpOnly(true).build();
+        driver.manage().addCookie(sessionCookie);
+        Set<Cookie> allCookie = driver.manage().getCookies();
+            for (Cookie cookie : allCookie) {
+                System.out.println("Name: " + cookie.getName());
+                System.out.println("Value: " + cookie.getValue());
+            }// Выводим все сформированные Cookie
+
+        Map<String, String> cookies = new HashMap<>();
+            cookies.put("session", token);
+            //cookies.put("lang", eng);
+
+        testBase.tearDown();
+        return allCookie;
     }
 
-
+    public static void main(String[] args) {
+        //getAuthCookie();
+    }
 }
