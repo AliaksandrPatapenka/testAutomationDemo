@@ -41,7 +41,7 @@ public abstract class BasePage  {
      */
 
     public void openPage(String path) {
-        String url = TestData.BASE_URL + path;
+        String url = TestData.BASE_PROTOCOL + TestData.BASE_DOMAIN + TestData.BASE_PORT + path;
         driver.get(url);
     }
 
