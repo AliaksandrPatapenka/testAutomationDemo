@@ -13,7 +13,7 @@ public class AuthHelper {
     private AuthHelper(){} //Приватный конструктор - чтобы нельзя было создать объект этого класса. Все методы будут статическими, вызываем как AuthHelper.methodName()
     private static final Logger log = LoggerFactory.getLogger(AuthHelper.class);
 
-    public static void getAuthCookie () {
+    public static WebDriver getAuthDriver () {
         TestBase testBase = new TestBase();
 
         testBase.setUp();
@@ -31,15 +31,21 @@ public class AuthHelper {
 
         String token = (String) ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("return JSON.parse(localStorage.getItem('prop.sessionEntity')).token");//Получение токена из LocalStorage
         Cookie sessionCookie = new Cookie.Builder("session", token)
-                .domain(TestData.BASE_DOMAIN).path("/")
-               .isHttpOnly(true).build();//Создание из токена куки
+                  .domain(TestData.BASE_DOMAIN).path("/")
+                  .isHttpOnly(true).build();//Создание из токена куки
         driver.manage().addCookie(sessionCookie);//Добавление куки в браузер
         Set<Cookie> allCookie = driver.manage().getCookies();//Получение всех кук
         log.info("Session cookie = {}",sessionCookie);
-        log.info("Все cookie = {}",allCookie);
+        log.info("All cookie = {}",allCookie);
+        /**
+         * Возвращаем драйвер с кукой. ВАЖНО:<br>
+         * 1.При вызове метода в тестовом классе новый браузер не создавать<br>
+         * 2.Закрытие браузера делать в классе тестов.
+         */
+        return driver;
     }
 
     public static void main(String[] args) {
-        getAuthCookie();
+        getAuthDriver();
     }
 }
