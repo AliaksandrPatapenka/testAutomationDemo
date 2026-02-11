@@ -44,7 +44,9 @@ public class LanguageTest extends TestBase {
     @AfterEach
     public void tearDownTest(){
         log.info("Завершение тестов. Очистка ресурсов");
-        tearDown();
+        step("Закрыли браузер", () -> {
+            tearDown();
+        } );
     }
 
     /**
