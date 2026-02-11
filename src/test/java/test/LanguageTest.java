@@ -7,7 +7,7 @@ import page.LanguageSelectComponent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
+import static io.qameta.allure.Allure.step;
 
 
 /**
@@ -30,9 +30,14 @@ public class LanguageTest extends TestBase {
     @BeforeEach
     public void setupTest() {
         log.info("Начало настройки тестов");
-        setUp();
-        languageSelectComponent = new LanguageSelectComponent(driver);
-        languageSelectComponent.openTestPage(TestData.LOGIN_URL);
+        step("Запускаем браузер", () ->{
+                setUp();});
+        step("Создаем драйвер", () ->{
+            languageSelectComponent = new LanguageSelectComponent(driver);
+        });
+        step("Открываем страницу авторизации", () ->{
+            languageSelectComponent.openTestPage(TestData.LOGIN_URL);
+        });
         log.info("✅ Страница открыта, тесты готовы к выполнению");
     }
 
@@ -52,7 +57,7 @@ public class LanguageTest extends TestBase {
     public void selectLanguageEng(){
         log.info("=== Case1.1: Выбор английской локализации ===");
         selectLanguage(TestData.LANGUAGE_ENG, TestData.EXPECTED_TEXT_LANGUAGE_ENG);
-        log.info("✅ Тест завершен успешно");
+        log.info("✅ Case1.1 завершен успешно");
     }
 
     /**
@@ -65,6 +70,6 @@ public class LanguageTest extends TestBase {
     public void selectLanguageRus(){
         log.info("=== Case 1.2: Выбор русской локализации ===");
         selectLanguage(TestData.LANGUAGE_RUS, TestData.EXPECTED_TEXT_LANGUAGE_RUS);
-        log.info("✅ Тест завершен успешно");
+        log.info("✅ Case 1.2 завершен успешно");
     }
 }
