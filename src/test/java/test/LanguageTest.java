@@ -47,9 +47,8 @@ public class LanguageTest extends TestBase {
     @DisplayName("Case1.1: Выбор локализации ENG ")
     //@Step("Выбор языка {language}")
     public void selectLanguageEng(){
-        step("Выбрали " + TestData.EXPECTED_TEXT_LANGUAGE_ENG + " язык", () -> {
-            selectLanguage(TestData.LANGUAGE_ENG, TestData.EXPECTED_TEXT_LANGUAGE_ENG);
-        });
+        step("Выбрали " + TestData.EXPECTED_TEXT_LANGUAGE_ENG + " язык", () ->
+                selectLanguage(TestData.LANGUAGE_ENG, TestData.EXPECTED_TEXT_LANGUAGE_ENG));
     }
 
     /**
@@ -61,8 +60,7 @@ public class LanguageTest extends TestBase {
     @DisplayName("Case 1.2: Выбор локализации RUS")
     //@Step("Выбор языка {language}")
     public void selectLanguageRus(){
-        step ("Выбрали " + TestData.EXPECTED_TEXT_LANGUAGE_RUS + " язык", () -> {
-            selectLanguage(TestData.LANGUAGE_RUS, TestData.EXPECTED_TEXT_LANGUAGE_RUS);
-        });
+        step ("Выбрали " + TestData.EXPECTED_TEXT_LANGUAGE_RUS + " язык", () ->
+                selectLanguage(TestData.LANGUAGE_RUS, TestData.EXPECTED_TEXT_LANGUAGE_RUS));
     }
 }

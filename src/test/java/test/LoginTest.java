@@ -33,7 +33,6 @@ public class LoginTest extends TestBase {
     @AfterEach
     public void tearDownTest(){
         step("Закрыли браузер", this::tearDown);
-
     }
 
     /**
@@ -45,9 +44,8 @@ public class LoginTest extends TestBase {
     @Test
     @DisplayName("Case 2.1: Проверка авторизации с невалидным логином")
     public void authInvalidLogin() {
-        step("Авторизация по логину: " + TestData.INVALID_LOGIN + " и паролю: " + TestData.USER_PASSWORD,() ->{
-            auth(TestData.INVALID_LOGIN, TestData.USER_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID, false);
-        });
+        step("Авторизация по логину: " + TestData.INVALID_LOGIN + " и паролю: " + TestData.USER_PASSWORD,() ->
+            auth(TestData.INVALID_LOGIN, TestData.USER_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID, false));
     }
 
     /**
@@ -59,9 +57,8 @@ public class LoginTest extends TestBase {
     @Test
     @DisplayName("Case 2.2: Проверка авторизации с невалидным паролем")
     public void authInvalidPassword() {
-        step("Авторизация по логину: " + TestData.USER_LOGIN + " и паролю: " + TestData.INVALID_PASSWORD,() ->{
-            auth(TestData.USER_LOGIN, TestData.INVALID_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID, false);
-        });
+        step("Авторизация по логину: " + TestData.USER_LOGIN + " и паролю: " + TestData.INVALID_PASSWORD,() ->
+            auth(TestData.USER_LOGIN, TestData.INVALID_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID, false));
     }
 
     /**
@@ -73,9 +70,8 @@ public class LoginTest extends TestBase {
     @Test
     @DisplayName("Case 2.3: Проверка авторизации с некорректными логином и паролем")
     public void authInvalidLoginPassword(){
-        step("Авторизация по логину: " + TestData.INVALID_LOGIN + " и паролю: " + TestData.INVALID_PASSWORD,() ->{
-            auth(TestData.INVALID_LOGIN, TestData.INVALID_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID, false);
-        });
+        step("Авторизация по логину: " + TestData.INVALID_LOGIN + " и паролю: " + TestData.INVALID_PASSWORD,() ->
+            auth(TestData.INVALID_LOGIN, TestData.INVALID_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID, false));
     }
 
     /**
@@ -87,8 +83,7 @@ public class LoginTest extends TestBase {
     @Test
     @DisplayName("Case 2.4: Проверка успешной авторизации")
     public void authSuccess(){
-        step("Авторизация по логину: " + TestData.USER_LOGIN + " и паролю: " + TestData.USER_PASSWORD,() ->{
-            auth(TestData.USER_LOGIN, TestData.USER_PASSWORD, TestData.EXPECTED_TEXT_AUTH, true);
-        });
+        step("Авторизация по логину: " + TestData.USER_LOGIN + " и паролю: " + TestData.USER_PASSWORD,() ->
+                auth(TestData.USER_LOGIN, TestData.USER_PASSWORD, TestData.EXPECTED_TEXT_AUTH, true));
     }
 }
