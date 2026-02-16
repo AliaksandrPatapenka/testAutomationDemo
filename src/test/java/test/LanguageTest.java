@@ -2,7 +2,6 @@ package test;
 
 import base.TestBase;
 import base.TestData;
-import io.qameta.allure.Step;
 import org.junit.jupiter.api.*;
 import page.LanguageSelectComponent;
 import static io.qameta.allure.Allure.step;
@@ -21,7 +20,7 @@ public class LanguageTest extends TestBase {
         String actualText = step("Получаем текст кнопки после выбора", () ->
                  languageSelectComponent.getLanguageButtonText()
         );
-        step("Проверяем, что язык изменился на." + expectedTextLanguage, () -> {
+        step("Проверяем, что язык изменился на " + expectedTextLanguage, () -> {
             Assertions.assertEquals(expectedTextLanguage, actualText, " ❌ Язык не совпадает с выбранным");
         });
 
@@ -30,12 +29,8 @@ public class LanguageTest extends TestBase {
     @BeforeEach
     public void setupTest() {
         step("Запускаем браузер", this::setUp);
-        step("Создаем драйвер", () ->{
-            languageSelectComponent = new LanguageSelectComponent(driver);
-        });
-        step("Открываем страницу авторизации", () ->{
-            languageSelectComponent.openTestPage(TestData.LOGIN_URL);
-        });
+        step("Создаем драйвер", () -> languageSelectComponent = new LanguageSelectComponent(driver));
+        step("Открываем страницу авторизации", () -> languageSelectComponent.openTestPage(TestData.LOGIN_URL));
     }
 
     @AfterEach
