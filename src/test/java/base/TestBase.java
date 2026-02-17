@@ -11,9 +11,6 @@ import java.time.Duration;
  */
 public class TestBase {
     protected WebDriver driver;
-    public WebDriver getDriver() {
-        return driver;
-    }
 
     public void setUp() {
         WebDriverManager.chromedriver().setup(); //Настраивает и инициализирует тестовое окружение.

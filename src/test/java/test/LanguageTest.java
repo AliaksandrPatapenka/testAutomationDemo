@@ -14,15 +14,13 @@ public class LanguageTest extends TestBase {
     private LanguageSelectComponent languageSelectComponent;
 
     private void selectLanguage(String language, String expectedTextLanguage){
-        step("Нажимаем кнопку, открывающую форму с доступными языками", () -> {
-            languageSelectComponent.selectLanguage(language);
-        });
+        step("Нажимаем кнопку, открывающую форму с доступными языками", () ->
+            languageSelectComponent.selectLanguage(language));
         String actualText = step("Получаем текст кнопки после выбора", () ->
                  languageSelectComponent.getLanguageButtonText()
         );
-        step("Проверяем, что язык изменился на " + expectedTextLanguage, () -> {
-            Assertions.assertEquals(expectedTextLanguage, actualText, " ❌ Язык не совпадает с выбранным");
-        });
+        step("Проверяем, что язык изменился на " + expectedTextLanguage, () ->
+            Assertions.assertEquals(expectedTextLanguage, actualText, " ❌ Язык не совпадает с выбранным"));
 
     }
 

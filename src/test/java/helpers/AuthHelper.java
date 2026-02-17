@@ -37,11 +37,6 @@ public class AuthHelper {
         Set<Cookie> allCookie = driver.manage().getCookies();//Получение всех кук
         log.info("Session cookie = {}",sessionCookie);
         log.info("All cookie = {}",allCookie);
-        /**
-         * Возвращаем драйвер с кукой. ВАЖНО:<br>
-         * 1.При вызове метода в тестовом классе новый браузер не создавать<br>
-         * 2.Закрытие браузера делать в классе тестов.
-         */
         return driver;
     }
 
