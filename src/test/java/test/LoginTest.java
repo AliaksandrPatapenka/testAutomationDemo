@@ -12,19 +12,20 @@ import static io.qameta.allure.Allure.step;
 public class LoginTest extends TestBase {
     private LoginPage loginPage;
 
-    private void auth(String userLogin, String userPassword, String expectedText, boolean isSuccess) {
-            loginPage.login(userLogin, userPassword);
-            String actualText;
-            if (isSuccess){
-                actualText = loginPage.getAuthSuccess();
-            } else {
-                actualText = loginPage.getAuthInvalid();
-            }// если true, то успешная авторизация.
-            Assertions.assertEquals(expectedText, actualText, "Нет нужного текста");
+    private void authSuccess(String userLogin, String userPassword, String expectedText){
+        loginPage.login(userLogin, userPassword);
+        String actualText = loginPage.getAuthSuccess();
+        Assertions.assertEquals(expectedText, actualText, "Нет нужного текста");
+    }
+
+    private void authInvalid(String userLogin, String userPassword, String expectedText){
+        loginPage.login(userLogin, userPassword);
+        String actualText = loginPage.getAuthInvalid();
+        Assertions.assertEquals(expectedText, actualText, "Нет нужного текста");
     }
 
     @BeforeEach
-    public void  setUpTest(){
+    public void setUpTest(){
         step("Запустили браузер", this::setUp);
         step("Создали драйвер",() -> loginPage = new LoginPage(driver));
         step("Открыли страницу авторизации",() -> loginPage.openPageLogin());
@@ -45,7 +46,7 @@ public class LoginTest extends TestBase {
     @DisplayName("Case 2.1: Проверка авторизации с невалидным логином")
     public void authInvalidLogin() {
         step("Авторизация по логину: " + TestData.INVALID_LOGIN + " и паролю: " + TestData.USER_PASSWORD,() ->
-            auth(TestData.INVALID_LOGIN, TestData.USER_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID, false));
+                authInvalid(TestData.INVALID_LOGIN, TestData.USER_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID));
     }
 
     /**
@@ -58,7 +59,7 @@ public class LoginTest extends TestBase {
     @DisplayName("Case 2.2: Проверка авторизации с невалидным паролем")
     public void authInvalidPassword() {
         step("Авторизация по логину: " + TestData.USER_LOGIN + " и паролю: " + TestData.INVALID_PASSWORD,() ->
-            auth(TestData.USER_LOGIN, TestData.INVALID_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID, false));
+                authInvalid(TestData.USER_LOGIN, TestData.INVALID_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID));
     }
 
     /**
@@ -71,7 +72,7 @@ public class LoginTest extends TestBase {
     @DisplayName("Case 2.3: Проверка авторизации с некорректными логином и паролем")
     public void authInvalidLoginPassword(){
         step("Авторизация по логину: " + TestData.INVALID_LOGIN + " и паролю: " + TestData.INVALID_PASSWORD,() ->
-            auth(TestData.INVALID_LOGIN, TestData.INVALID_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID, false));
+                authInvalid(TestData.INVALID_LOGIN, TestData.INVALID_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID));
     }
 
     /**
@@ -84,6 +85,6 @@ public class LoginTest extends TestBase {
     @DisplayName("Case 2.4: Проверка успешной авторизации")
     public void authSuccess(){
         step("Авторизация по логину: " + TestData.USER_LOGIN + " и паролю: " + TestData.USER_PASSWORD,() ->
-                auth(TestData.USER_LOGIN, TestData.USER_PASSWORD, TestData.EXPECTED_TEXT_AUTH, true));
+                authSuccess(TestData.USER_LOGIN, TestData.USER_PASSWORD, TestData.EXPECTED_TEXT_AUTH));
     }
 }
