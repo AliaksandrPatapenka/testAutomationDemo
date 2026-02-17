@@ -4,10 +4,7 @@ import base.TestBase;
 import base.TestData;
 import org.junit.jupiter.api.*;
 import page.LanguageSelectComponent;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-
+import static io.qameta.allure.Allure.step;
 
 
 /**
@@ -15,31 +12,30 @@ import org.slf4j.LoggerFactory;
  */
 public class LanguageTest extends TestBase {
     private LanguageSelectComponent languageSelectComponent;
-    private static final Logger log = LoggerFactory.getLogger(LanguageTest.class);
 
     private void selectLanguage(String language, String expectedTextLanguage){
-        log.info("Нажимаем кнопку, открывающую форму с доступными языками: {}", language);
-        languageSelectComponent.selectLanguage(language);
-        log.info("✅ Язык выбран, получаем текст кнопки");
-        String actualText = languageSelectComponent.getLanguageButtonText();
-        log.info(" Ожидаемый текст: {}, Фактический текст: {}", actualText, expectedTextLanguage);
-        Assertions.assertEquals(expectedTextLanguage, actualText, " ❌ Язык не совпадает с выбранным");
-        log.info("✅ Проверка выбора языка прошла успешно");
+        step("Нажимаем кнопку, открывающую форму с доступными языками", () -> {
+            languageSelectComponent.selectLanguage(language);
+        });
+        String actualText = step("Получаем текст кнопки после выбора", () ->
+                 languageSelectComponent.getLanguageButtonText()
+        );
+        step("Проверяем, что язык изменился на " + expectedTextLanguage, () -> {
+            Assertions.assertEquals(expectedTextLanguage, actualText, " ❌ Язык не совпадает с выбранным");
+        });
+
     }
 
     @BeforeEach
     public void setupTest() {
-        log.info("Начало настройки тестов");
-        setUp();
-        languageSelectComponent = new LanguageSelectComponent(driver);
-        languageSelectComponent.openTestPage(TestData.LOGIN_URL);
-        log.info("✅ Страница открыта, тесты готовы к выполнению");
+        step("Запускаем браузер", this::setUp);
+        step("Создаем драйвер", () -> languageSelectComponent = new LanguageSelectComponent(driver));
+        step("Открываем страницу авторизации", () -> languageSelectComponent.openTestPage(TestData.LOGIN_URL));
     }
 
     @AfterEach
     public void tearDownTest(){
-        log.info("Завершение тестов. Очистка ресурсов");
-        tearDown();
+        step("Закрыли браузер", this::tearDown);
     }
 
     /**
@@ -49,10 +45,10 @@ public class LanguageTest extends TestBase {
      */
     @Test
     @DisplayName("Case1.1: Выбор локализации ENG ")
+    //@Step("Выбор языка {language}")
     public void selectLanguageEng(){
-        log.info("=== Case1.1: Выбор английской локализации ===");
-        selectLanguage(TestData.LANGUAGE_ENG, TestData.EXPECTED_TEXT_LANGUAGE_ENG);
-        log.info("✅ Тест завершен успешно");
+        step("Выбрали " + TestData.EXPECTED_TEXT_LANGUAGE_ENG + " язык", () ->
+                selectLanguage(TestData.LANGUAGE_ENG, TestData.EXPECTED_TEXT_LANGUAGE_ENG));
     }
 
     /**
@@ -62,9 +58,9 @@ public class LanguageTest extends TestBase {
      */
     @Test
     @DisplayName("Case 1.2: Выбор локализации RUS")
+    //@Step("Выбор языка {language}")
     public void selectLanguageRus(){
-        log.info("=== Case 1.2: Выбор русской локализации ===");
-        selectLanguage(TestData.LANGUAGE_RUS, TestData.EXPECTED_TEXT_LANGUAGE_RUS);
-        log.info("✅ Тест завершен успешно");
+        step ("Выбрали " + TestData.EXPECTED_TEXT_LANGUAGE_RUS + " язык", () ->
+                selectLanguage(TestData.LANGUAGE_RUS, TestData.EXPECTED_TEXT_LANGUAGE_RUS));
     }
 }

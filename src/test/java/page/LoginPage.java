@@ -71,7 +71,7 @@ public class LoginPage extends BasePage {
         return getText(authError);
     }
 
-    public String getAutSuccess(){
+    public String getAuthSuccess(){
         visibilityOfElementLocated(logoutButton);
         return  getText(logoutButton);
     }
