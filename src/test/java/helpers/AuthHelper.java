@@ -40,7 +40,7 @@ public class AuthHelper {
         return driver;
     }
 
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         getAuthDriver();
     }
 }

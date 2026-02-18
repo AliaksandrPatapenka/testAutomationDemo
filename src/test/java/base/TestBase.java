@@ -24,4 +24,8 @@ public class TestBase {
             driver.quit();
         } //Закрывает браузер и освобождает ресурсы WebDriver, если он был инициализирован.
     }
+
+    public WebDriver getDriver() {
+        return getDriver();
+    }
 }
