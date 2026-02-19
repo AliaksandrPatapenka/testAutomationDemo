@@ -2,6 +2,7 @@ package test;
 
 import base.TestBase;
 import base.TestData;
+import helpers.AuthHelper;
 import org.junit.jupiter.api.*;
 import page.LoginPage;
 import static io.qameta.allure.Allure.step;
@@ -12,14 +13,14 @@ import static io.qameta.allure.Allure.step;
 public class LoginTest extends TestBase {
     private LoginPage loginPage;
 
-    private void authSuccess(String userLogin, String userPassword, String expectedText){
-        loginPage.login(userLogin, userPassword);
+    private void authSuccess(String login, String password, String expectedText){
+        AuthHelper.login(driver, login, password);
         String actualText = loginPage.getAuthSuccess();
         Assertions.assertEquals(expectedText, actualText, "Нет нужного текста");
     }
 
-    private void authInvalid(String userLogin, String userPassword, String expectedText){
-        loginPage.login(userLogin, userPassword);
+    private void authInvalid(String login, String password, String expectedText){
+        AuthHelper.login(driver,login, password);
         String actualText = loginPage.getAuthInvalid();
         Assertions.assertEquals(expectedText, actualText, "Нет нужного текста");
     }
