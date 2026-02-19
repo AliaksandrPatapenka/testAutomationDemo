@@ -25,6 +25,6 @@ public class TestBase {
     }
 
     public WebDriver getDriver() {
-        return getDriver();
+        return driver;
     }
 }
