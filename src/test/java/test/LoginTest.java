@@ -16,13 +16,13 @@ public class LoginTest extends TestBase {
     private void authSuccess(String login, String password, String expectedText){
         AuthHelper.login(driver, login, password);
         String actualText = loginPage.getAuthSuccess();
-        Assertions.assertEquals(expectedText, actualText, "Нет нужного текста");
+        Assertions.assertEquals(expectedText, actualText, "⚠️ Кнопка выхода появилась. Но текст в кнопке не Exit");
     }
 
     private void authInvalid(String login, String password, String expectedText){
         AuthHelper.login(driver,login, password);
         String actualText = loginPage.getAuthInvalid();
-        Assertions.assertEquals(expectedText, actualText, "Нет нужного текста");
+        Assertions.assertEquals(expectedText, actualText, "⚠️ Полученный текст не Invalid login or password");
     }
 
     @BeforeEach
@@ -85,7 +85,7 @@ public class LoginTest extends TestBase {
     @Test
     @DisplayName("Case 2.4: Проверка успешной авторизации")
     public void authSuccess(){
-        step("Авторизация по логину: " + TestData.USER_LOGIN + " и паролю: " + TestData.USER_PASSWORD,() ->
+        step(" Авторизация по логину: " + TestData.USER_LOGIN + " и паролю: " + TestData.USER_PASSWORD,() ->
                 authSuccess(TestData.USER_LOGIN, TestData.USER_PASSWORD, TestData.EXPECTED_TEXT_AUTH));
     }
 }

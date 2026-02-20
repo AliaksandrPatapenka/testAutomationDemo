@@ -33,8 +33,8 @@ public abstract class BasePage  {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    protected boolean  invisibilityOfElementLocated(By locator){
-        return wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+    protected void invisibilityOfElementLocated(By locator){
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
         /**
      * МЕТОДЫ ДЕЙСТВИЙ
@@ -59,17 +59,6 @@ public abstract class BasePage  {
     /**
      * МЕТОДЫ ПОЛУЧЕНИЯ ДАННЫХ.
      */
-    public boolean isElementClickable(By locator) {
-        try {
-            WebElement element = elementToBeClickable(locator);
-            return element.isEnabled();
-        } catch (TimeoutException e) {
-            return false; // Элемент не стал кликабельным за время ожидания
-        } catch (NoSuchElementException e) {
-            return false; // Элемент не найден вообще
-        }
-    }
-
     public String getText(By locator) {
         WebElement element = visibilityOfElementLocated(locator);
         return element.getText();
