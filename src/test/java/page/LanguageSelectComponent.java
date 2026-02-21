@@ -32,11 +32,6 @@ public class LanguageSelectComponent extends BasePage {
 
     private void clickLanguageButton() {
         invisibilityOfElementLocated(spinner);
-        try {
-            Thread.sleep(1000); // 800 мс
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
         elementToBeClickable(langButton);
         clickButton(langButton);
     }

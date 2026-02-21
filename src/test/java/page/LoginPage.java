@@ -3,7 +3,9 @@ package page;
 import base.BasePage;
 import base.TestData;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.net.UrlChecker;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 /**
  * Элементы и действия страницы авторизации
@@ -62,12 +64,23 @@ public class LoginPage extends BasePage {
     }
 
     public String getAuthInvalid(){
-        visibilityOfElementLocated(authError);
-        return getText(authError);
+        try {
+            visibilityOfElementLocated(authError);
+            return getText(authError);
+        } catch (TimeoutException error){
+            throw  new  AssertionError("❌ Не получили ожидаемый текст о неуспешной авторизации." +
+                    "Текущий URL: " + driver.getCurrentUrl(), error);
+        }
+
     }
 
     public String getAuthSuccess(){
-        visibilityOfElementLocated(logoutButton);
-        return  getText(logoutButton);
+        try {
+            visibilityOfElementLocated(logoutButton);
+            return  getText(logoutButton);
+        } catch (TimeoutException error){
+            throw new AssertionError("❌ Не удалось подтвердить успешную авторизацию: кнопка выхода не появилась." +
+                    "Текущий URL: " + driver.getCurrentUrl(), error);
+        }
     }
 }

@@ -16,12 +16,15 @@ public class TestBase {
         WebDriverManager.chromedriver().setup(); //Настраивает и инициализирует тестовое окружение.
         driver = new ChromeDriver(); //Устанавливает драйвер Chrome
         driver.manage().window().maximize(); //Максимизирует окно браузера
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TestData.DEFAULT_TIMEOUT)); //Устанавливает неявное ожидание.
     }
 
     public void tearDown (){
         if (driver != null) {
             driver.quit();
         } //Закрывает браузер и освобождает ресурсы WebDriver, если он был инициализирован.
+    }
+
+    public WebDriver getDriver() {
+        return driver;
     }
 }
