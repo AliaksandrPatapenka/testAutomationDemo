@@ -2,6 +2,7 @@ package page;
 
 import base.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 
 /**
@@ -53,7 +54,12 @@ public class LanguageSelectComponent extends BasePage {
      *МЕТОДЫ ПРОВЕРОК
      */
     public String getLanguageButtonText() {
-        visibilityOfElementLocated(languageButtonText);
-        return getText(languageButtonText);
+        try {
+            visibilityOfElementLocated(languageButtonText);
+            return getText(languageButtonText);
+        } catch (TimeoutException error) {
+            throw new AssertionError("❌ Не удалоcь получить текст кнопки выбора языка.");
+        }
+
     }
 }

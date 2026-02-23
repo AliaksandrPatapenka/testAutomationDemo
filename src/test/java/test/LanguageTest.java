@@ -46,7 +46,7 @@ public class LanguageTest extends TestBase {
     //@Step("Выбор языка {language}")
     public void selectLanguageEng(){
         step("Выбрали " + TestData.EXPECTED_TEXT_LANGUAGE_ENG + " язык", () ->
-                selectLanguage(TestData.LANGUAGE_ENG, TestData.EXPECTED_TEXT_LANGUAGE_ENG));
+                selectLanguage(TestData.LANGUAGE_CODE_ENG, TestData.EXPECTED_TEXT_LANGUAGE_ENG));
     }
 
     /**
@@ -59,6 +59,6 @@ public class LanguageTest extends TestBase {
     //@Step("Выбор языка {language}")
     public void selectLanguageRus(){
         step ("Выбрали " + TestData.EXPECTED_TEXT_LANGUAGE_RUS + " язык", () ->
-                selectLanguage(TestData.LANGUAGE_RUS, TestData.EXPECTED_TEXT_LANGUAGE_RUS));
+                selectLanguage(TestData.LANGUAGE_CODE_RUS, TestData.EXPECTED_TEXT_LANGUAGE_RUS));
     }
 }
