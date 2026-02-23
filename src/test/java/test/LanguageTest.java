@@ -26,14 +26,14 @@ public class LanguageTest extends TestBase {
 
     @BeforeEach
     public void setupTest() {
-        step("Запускаем браузер", this::setUp);
-        step("Создаем драйвер", () -> languageSelectComponent = new LanguageSelectComponent(driver));
-        step("Открываем страницу авторизации", () -> languageSelectComponent.openTestPage(TestData.LOGIN_URL));
+        setUp();
+        languageSelectComponent = new LanguageSelectComponent(driver);
+        languageSelectComponent.openTestPage(TestData.LOGIN_URL);
     }
 
     @AfterEach
     public void tearDownTest(){
-        step("Закрыли браузер", this::tearDown);
+        tearDown();
     }
 
     /**

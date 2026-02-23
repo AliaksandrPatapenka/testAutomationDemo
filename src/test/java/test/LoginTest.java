@@ -29,14 +29,14 @@ public class LoginTest extends TestBase {
 
     @BeforeEach
     public void setUpTest(){
-        step("Запустили браузер", this::setUp);
-        step("Создали драйвер",() -> loginPage = new LoginPage(driver));
-        step("Открыли страницу авторизации",() -> loginPage.openPageLogin());
+        setUp();
+        loginPage = new LoginPage(driver);
+        loginPage.openPageLogin();
     }
 
     @AfterEach
     public void tearDownTest(){
-        step("Закрыли браузер", this::tearDown);
+        tearDown();
     }
 
     /**
