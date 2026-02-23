@@ -13,18 +13,11 @@ import static io.qameta.allure.Allure.step;
 public class LoginTest extends TestBase {
     private LoginPage loginPage;
 
-    private void authSuccess(String login, String password, String expectedText){
-        AuthHelper.login(driver, login, password);
-        String actualText = loginPage.getAuthSuccess();
-        Assertions.assertNotNull(actualText, "❌ Элемент Logout не появился. Текущий URL: " + driver.getCurrentUrl());
-        Assertions.assertEquals(expectedText, actualText, "⚠️ Текст кнопки выхода не соответствует ожидаемому");
-    }
-
-    private void authInvalid(String login, String password, String expectedText){
+    private void authInvalid(String login, String password){
         AuthHelper.login(driver,login, password);
         String actualText = loginPage.getAuthInvalid();
         Assertions.assertNotNull(actualText, "❌ Элемент с ошибкой авторизации не появился");
-        Assertions.assertEquals(expectedText, actualText, "⚠️ Текст ошибки входа не соответствует ожидаемому");
+        Assertions.assertEquals(TestData.EXPECTED_TEXT_AUTH_INVALID, actualText, "⚠️ Текст ошибки входа не соответствует ожидаемому");
     }
 
     @BeforeEach
@@ -49,7 +42,7 @@ public class LoginTest extends TestBase {
     @DisplayName("Case 2.1: Проверка авторизации с невалидным логином")
     public void authInvalidLogin() {
         step("Авторизация по логину: " + TestData.INVALID_LOGIN + " и паролю: " + TestData.USER_PASSWORD,() ->
-                authInvalid(TestData.INVALID_LOGIN, TestData.USER_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID));
+                authInvalid(TestData.INVALID_LOGIN, TestData.USER_PASSWORD));
     }
 
     /**
@@ -62,7 +55,7 @@ public class LoginTest extends TestBase {
     @DisplayName("Case 2.2: Проверка авторизации с невалидным паролем")
     public void authInvalidPassword() {
         step("Авторизация по логину: " + TestData.USER_LOGIN + " и паролю: " + TestData.INVALID_PASSWORD,() ->
-                authInvalid(TestData.USER_LOGIN, TestData.INVALID_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID));
+                authInvalid(TestData.USER_LOGIN, TestData.INVALID_PASSWORD));
     }
 
     /**
@@ -75,7 +68,7 @@ public class LoginTest extends TestBase {
     @DisplayName("Case 2.3: Проверка авторизации с некорректными логином и паролем")
     public void authInvalidLoginPassword(){
         step("Авторизация по логину: " + TestData.INVALID_LOGIN + " и паролю: " + TestData.INVALID_PASSWORD,() ->
-                authInvalid(TestData.INVALID_LOGIN, TestData.INVALID_PASSWORD, TestData.EXPECTED_TEXT_AUTH_INVALID));
+                authInvalid(TestData.INVALID_LOGIN, TestData.INVALID_PASSWORD));
     }
 
     /**
@@ -88,6 +81,9 @@ public class LoginTest extends TestBase {
     @DisplayName("Case 2.4: Проверка успешной авторизации")
     public void authSuccess(){
         step(" Авторизация по логину: " + TestData.USER_LOGIN + " и паролю: " + TestData.USER_PASSWORD,() ->
-                authSuccess(TestData.USER_LOGIN, TestData.USER_PASSWORD, TestData.EXPECTED_TEXT_AUTH));
+                AuthHelper.login(driver,TestData.USER_LOGIN, TestData.USER_PASSWORD));
+        String actualText = loginPage.getAuthSuccess();
+        Assertions.assertNotNull(actualText, "❌ Элемент Logout не появился. Текущий URL: " + driver.getCurrentUrl());
+        Assertions.assertEquals(TestData.EXPECTED_TEXT_AUTH_SUCCESS, actualText, "⚠️ Текст кнопки выхода не соответствует ожидаемому");
     }
 }
