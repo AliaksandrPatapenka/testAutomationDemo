@@ -55,10 +55,9 @@ public class LanguageSelectComponent extends BasePage {
      */
     public String getLanguageButtonText() {
         try {
-            visibilityOfElementLocated(languageButtonText);
             return getText(languageButtonText);
         } catch (TimeoutException error) {
-            throw new AssertionError("❌ Не удалоcь получить текст кнопки выбора языка.");
+            return null;
         }
 
     }

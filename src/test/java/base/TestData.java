@@ -6,8 +6,6 @@ package base;
 public final class TestData {
 
     public static final String BASE_URL = System.getProperty("base.url", "http://localhost:5001");
-    //public static final String BASE_PROTOCOL = System.getProperty("base.protocol", "http://");
-    //public static final String BASE_PORT = System.getProperty("base.port", ":5001");
     public static final String LOGIN_URL = System.getProperty("login.url", "/login");
 
     public static final String USER_LOGIN = System.getProperty("user.login", "user");
