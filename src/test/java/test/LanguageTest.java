@@ -20,7 +20,7 @@ public class LanguageTest extends TestBase {
                  languageSelectComponent.getLanguageButtonText()
         );
         step("Проверяем, что язык изменился на " + expectedTextLanguage, () ->
-            Assertions.assertEquals(expectedTextLanguage, actualText, " ❌ Язык не совпадает с выбранным"));
+            Assertions.assertEquals(expectedTextLanguage, actualText, "❌ Язык не совпадает с выбранным"));
 
     }
 

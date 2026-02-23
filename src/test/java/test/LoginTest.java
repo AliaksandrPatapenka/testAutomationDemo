@@ -16,15 +16,15 @@ public class LoginTest extends TestBase {
     private void authSuccess(String login, String password, String expectedText){
         AuthHelper.login(driver, login, password);
         String actualText = loginPage.getAuthSuccess();
-        Assertions.assertNotNull(actualText, "Элемент с ошибкой авторизации не появился. Текущий URL: " + driver.getCurrentUrl());
-        Assertions.assertEquals(expectedText, actualText, "⚠️ Кнопка выхода появилась. Но текст в кнопке не Exit");
+        Assertions.assertNotNull(actualText, "❌ Элемент Logout не появился. Текущий URL: " + driver.getCurrentUrl());
+        Assertions.assertEquals(expectedText, actualText, "⚠️ Текст кнопки выхода не соответствует ожидаемому");
     }
 
     private void authInvalid(String login, String password, String expectedText){
         AuthHelper.login(driver,login, password);
         String actualText = loginPage.getAuthInvalid();
-        Assertions.assertNotNull(actualText, "Элемент с ошибкой авторизации не появился");
-        Assertions.assertEquals(expectedText, actualText, "⚠️ Полученный текст не Invalid login or password");
+        Assertions.assertNotNull(actualText, "❌ Элемент с ошибкой авторизации не появился");
+        Assertions.assertEquals(expectedText, actualText, "⚠️ Текст ошибки входа не соответствует ожидаемому");
     }
 
     @BeforeEach

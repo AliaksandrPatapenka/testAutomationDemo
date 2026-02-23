@@ -33,7 +33,6 @@ public class LanguageSelectComponent extends BasePage {
 
     private void clickLanguageButton() {
         invisibilityOfElementLocated(spinner);
-        elementToBeClickable(langButton);
         clickButton(langButton);
     }
 
