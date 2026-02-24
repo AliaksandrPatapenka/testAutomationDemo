@@ -83,7 +83,6 @@ public class LoginPage extends BasePage {
             log.debug("Элемент с ошибкой не появился");
             return null;
         }
-
     }
 
     public String getAuthSuccess(){
