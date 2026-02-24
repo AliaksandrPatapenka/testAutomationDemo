@@ -273,3 +273,99 @@
 2026-02-24 17:33:04.381 [main] DEBUG base.BasePage - Получаем текст из элемента: By.id: logout
 2026-02-24 17:33:04.381 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.id: logout
 2026-02-24 17:33:14.871 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:44:21.603 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:44:21.631 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:44:23.336 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:44:24.176 [main] DEBUG base.BasePage - Ожидание невидимости элемента: By.cssSelector: [id='spinner_overlay_page']
+2026-02-24 17:44:25.443 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: [data-id='dropLang']
+2026-02-24 17:44:25.492 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: [data-id='dropLang']
+2026-02-24 17:44:25.663 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: a[data-id='eng']
+2026-02-24 17:44:25.710 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: a[data-id='eng']
+2026-02-24 17:44:26.334 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.cssSelector: [data-id='dropLang'] .footer-settings__text
+2026-02-24 17:44:26.952 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:44:27.124 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:44:27.151 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:44:28.110 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:44:29.073 [main] DEBUG base.BasePage - Ожидание невидимости элемента: By.cssSelector: [id='spinner_overlay_page']
+2026-02-24 17:44:30.319 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: [data-id='dropLang']
+2026-02-24 17:44:30.371 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: [data-id='dropLang']
+2026-02-24 17:44:30.540 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: a[data-id='rus']
+2026-02-24 17:44:30.590 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: a[data-id='rus']
+2026-02-24 17:44:31.174 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.cssSelector: [data-id='dropLang'] .footer-settings__text
+2026-02-24 17:44:31.780 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:44:31.835 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:44:31.859 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:44:32.992 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:44:34.506 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: login
+2026-02-24 17:44:34.688 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: password
+2026-02-24 17:44:34.809 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:44:34.993 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.className: auth__error
+2026-02-24 17:44:35.994 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:44:36.027 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:44:36.040 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:44:37.199 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:44:38.811 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: login
+2026-02-24 17:44:38.959 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: password
+2026-02-24 17:44:39.082 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:44:39.252 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.className: auth__error
+2026-02-24 17:44:40.235 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:44:40.272 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:44:40.282 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:44:41.568 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:44:43.078 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: login
+2026-02-24 17:44:43.279 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: password
+2026-02-24 17:44:43.407 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:44:43.553 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.className: auth__error
+2026-02-24 17:44:44.523 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:44:44.567 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:44:44.585 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:44:45.725 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:44:47.400 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: login
+2026-02-24 17:44:47.582 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: password
+2026-02-24 17:44:47.726 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:44:47.870 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.id: logout
+2026-02-24 17:44:58.507 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:47:42.976 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:47:43.005 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:47:44.714 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:47:45.681 [main] DEBUG base.BasePage - Ожидание невидимости элемента: By.cssSelector: [id='spinner_overlay_page']
+2026-02-24 17:47:46.942 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: [data-id='dropLang111111']
+2026-02-24 17:47:57.909 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:47:58.063 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:47:58.073 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:47:59.141 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:48:00.208 [main] DEBUG base.BasePage - Ожидание невидимости элемента: By.cssSelector: [id='spinner_overlay_page']
+2026-02-24 17:48:01.385 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: [data-id='dropLang111111']
+2026-02-24 17:48:11.830 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:48:11.935 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:48:11.945 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:48:12.954 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:48:14.724 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: login
+2026-02-24 17:48:14.913 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: password
+2026-02-24 17:48:15.038 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:48:15.171 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.className: auth__error
+2026-02-24 17:48:16.093 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:48:16.133 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:48:16.154 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:48:17.240 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:48:18.617 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: login
+2026-02-24 17:48:18.768 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: password
+2026-02-24 17:48:18.888 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:48:19.024 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.className: auth__error
+2026-02-24 17:48:19.923 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:48:19.951 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:48:19.961 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:48:20.989 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:48:22.291 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: login
+2026-02-24 17:48:22.441 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: password
+2026-02-24 17:48:22.550 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:48:22.678 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.className: auth__error
+2026-02-24 17:48:23.659 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:48:23.685 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:48:23.694 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:48:24.622 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:48:26.044 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: login
+2026-02-24 17:48:26.185 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: password
+2026-02-24 17:48:26.301 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:48:26.442 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.id: logout
+2026-02-24 17:48:36.978 [main] INFO  base.TestBase - ? Браузер закрыт

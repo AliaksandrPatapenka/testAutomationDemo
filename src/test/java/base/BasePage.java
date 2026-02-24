@@ -28,17 +28,14 @@ public abstract class BasePage  {
      * ОЖИДАНИЯ И ЗАДЕРЖКИ
      */
     protected WebElement elementToBeClickable(By locator) {
-        log.debug("Ожидание кликабельности элемента: {}", locator);
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
     protected WebElement visibilityOfElementLocated(By locator){
-        log.debug("Ожидание видимости элемента: {}", locator);
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
     protected void invisibilityOfElementLocated(By locator){
-        log.debug("Ожидание невидимости элемента: {}", locator);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
 
