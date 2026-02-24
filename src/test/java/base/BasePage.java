@@ -4,8 +4,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
     /**
       * Абстрактный базовый класс для всех страниц.
@@ -14,7 +12,6 @@ import org.slf4j.LoggerFactory;
 public abstract class BasePage  {
     protected WebDriver driver;
     protected WebDriverWait wait;
-    protected static final Logger log = LoggerFactory.getLogger(BasePage.class);
 
     /**
      * КОНСТРУКТОР

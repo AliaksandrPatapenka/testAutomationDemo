@@ -369,3 +369,27 @@
 2026-02-24 17:48:26.301 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: .sign-in__button.j-button-submit
 2026-02-24 17:48:26.442 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.id: logout
 2026-02-24 17:48:36.978 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:54:46.598 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:54:46.626 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:54:48.415 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:55:01.735 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:55:01.872 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:55:01.881 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:55:03.048 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:55:16.264 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:55:16.390 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:55:16.410 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:55:17.512 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:55:20.259 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:55:20.324 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:55:20.334 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:55:21.661 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:55:25.154 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:55:25.357 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:55:25.490 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:55:27.137 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:55:29.846 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:55:29.929 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:55:29.980 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:55:31.354 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:55:44.959 [main] INFO  base.TestBase - ? Браузер закрыт
