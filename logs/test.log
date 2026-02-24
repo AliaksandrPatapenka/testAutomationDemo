@@ -1,0 +1,275 @@
+2026-02-24 17:03:16.262 [main] INFO  base.TestBase - Запуск браузера Chrome
+2026-02-24 17:03:16.726 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:03:16.753 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:03:18.599 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:03:18.602 [main] INFO  base.BasePage - Открываем тестовую страницу: /login
+2026-02-24 17:03:18.603 [main] INFO  base.BasePage - Открываем страницу: http://localhost:5001/login
+2026-02-24 17:03:19.804 [main] INFO  base.BasePage - Переключаем локализацию на eng
+2026-02-24 17:03:19.805 [main] INFO  base.BasePage - Ожидаем исчезновения спиннера и открываем список доступных локализаций
+2026-02-24 17:03:21.208 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: [data-id='dropLang']
+2026-02-24 17:03:21.370 [main] INFO  base.BasePage - Выбираем локализацию с кодом: eng
+2026-02-24 17:03:21.420 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: a[data-id='eng']
+2026-02-24 17:03:22.230 [main] INFO  base.BasePage - Получаем текст кнопки выбора локализации
+2026-02-24 17:03:22.452 [main] INFO  base.TestBase - Закрываем браузер
+2026-02-24 17:03:22.912 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:03:23.090 [main] INFO  base.TestBase - Запуск браузера Chrome
+2026-02-24 17:03:23.109 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:03:23.117 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:03:24.351 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:03:24.351 [main] INFO  base.BasePage - Открываем тестовую страницу: /login
+2026-02-24 17:03:24.351 [main] INFO  base.BasePage - Открываем страницу: http://localhost:5001/login
+2026-02-24 17:03:24.429 [main] INFO  base.BasePage - Переключаем локализацию на rus
+2026-02-24 17:03:24.430 [main] INFO  base.BasePage - Ожидаем исчезновения спиннера и открываем список доступных локализаций
+2026-02-24 17:03:26.397 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: [data-id='dropLang']
+2026-02-24 17:03:26.549 [main] INFO  base.BasePage - Выбираем локализацию с кодом: rus
+2026-02-24 17:03:26.601 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: a[data-id='rus']
+2026-02-24 17:03:27.184 [main] INFO  base.BasePage - Получаем текст кнопки выбора локализации
+2026-02-24 17:03:27.430 [main] INFO  base.TestBase - Закрываем браузер
+2026-02-24 17:03:27.868 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:03:27.975 [main] INFO  base.TestBase - Запуск браузера Chrome
+2026-02-24 17:03:27.998 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:03:28.012 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:03:29.156 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:03:29.159 [main] INFO  page.LoginPage - Открываем страницу логина
+2026-02-24 17:03:29.159 [main] INFO  base.BasePage - Открываем страницу: http://localhost:5001/login
+2026-02-24 17:03:29.920 [main] INFO  page.LoginPage - Ожидание загрузки страницы авторизации
+2026-02-24 17:03:30.739 [main] INFO  page.LoginPage - Страница логина загружена
+2026-02-24 17:03:30.744 [main] INFO  base.BasePage - Вводим текст 'userInvalid' в элемент: By.name: login
+2026-02-24 17:03:30.902 [main] INFO  base.BasePage - Вводим текст '4321' в элемент: By.name: password
+2026-02-24 17:03:31.019 [main] INFO  page.LoginPage - Нажимаем на кнопку авторизации
+2026-02-24 17:03:31.019 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:03:31.156 [main] INFO  page.LoginPage - Отправляем запрос авторизации
+2026-02-24 17:03:31.156 [main] INFO  page.LoginPage - Проверяем появление ошибки авторизации
+2026-02-24 17:03:31.800 [main] INFO  base.TestBase - Закрываем браузер
+2026-02-24 17:03:32.171 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:03:32.193 [main] INFO  base.TestBase - Запуск браузера Chrome
+2026-02-24 17:03:32.214 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:03:32.240 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:03:33.570 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:03:33.571 [main] INFO  page.LoginPage - Открываем страницу логина
+2026-02-24 17:03:33.571 [main] INFO  base.BasePage - Открываем страницу: http://localhost:5001/login
+2026-02-24 17:03:34.395 [main] INFO  page.LoginPage - Ожидание загрузки страницы авторизации
+2026-02-24 17:03:35.188 [main] INFO  page.LoginPage - Страница логина загружена
+2026-02-24 17:03:35.189 [main] INFO  base.BasePage - Вводим текст 'user' в элемент: By.name: login
+2026-02-24 17:03:35.351 [main] INFO  base.BasePage - Вводим текст '4321' в элемент: By.name: password
+2026-02-24 17:03:35.468 [main] INFO  page.LoginPage - Нажимаем на кнопку авторизации
+2026-02-24 17:03:35.468 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:03:35.622 [main] INFO  page.LoginPage - Отправляем запрос авторизации
+2026-02-24 17:03:35.622 [main] INFO  page.LoginPage - Проверяем появление ошибки авторизации
+2026-02-24 17:03:36.273 [main] INFO  base.TestBase - Закрываем браузер
+2026-02-24 17:03:36.667 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:03:36.681 [main] INFO  base.TestBase - Запуск браузера Chrome
+2026-02-24 17:03:36.698 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:03:36.711 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:03:37.734 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:03:37.734 [main] INFO  page.LoginPage - Открываем страницу логина
+2026-02-24 17:03:37.735 [main] INFO  base.BasePage - Открываем страницу: http://localhost:5001/login
+2026-02-24 17:03:38.712 [main] INFO  page.LoginPage - Ожидание загрузки страницы авторизации
+2026-02-24 17:03:39.441 [main] INFO  page.LoginPage - Страница логина загружена
+2026-02-24 17:03:39.442 [main] INFO  base.BasePage - Вводим текст 'userInvalid' в элемент: By.name: login
+2026-02-24 17:03:39.596 [main] INFO  base.BasePage - Вводим текст '1234' в элемент: By.name: password
+2026-02-24 17:03:39.707 [main] INFO  page.LoginPage - Нажимаем на кнопку авторизации
+2026-02-24 17:03:39.708 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:03:39.848 [main] INFO  page.LoginPage - Отправляем запрос авторизации
+2026-02-24 17:03:39.848 [main] INFO  page.LoginPage - Проверяем появление ошибки авторизации
+2026-02-24 17:03:40.512 [main] INFO  base.TestBase - Закрываем браузер
+2026-02-24 17:03:40.914 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:03:40.923 [main] INFO  base.TestBase - Запуск браузера Chrome
+2026-02-24 17:03:40.949 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:03:40.962 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:03:42.214 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:03:42.215 [main] INFO  page.LoginPage - Открываем страницу логина
+2026-02-24 17:03:42.216 [main] INFO  base.BasePage - Открываем страницу: http://localhost:5001/login
+2026-02-24 17:03:43.128 [main] INFO  page.LoginPage - Ожидание загрузки страницы авторизации
+2026-02-24 17:03:43.815 [main] INFO  page.LoginPage - Страница логина загружена
+2026-02-24 17:03:43.818 [main] INFO  base.BasePage - Вводим текст 'user' в элемент: By.name: login
+2026-02-24 17:03:44.007 [main] INFO  base.BasePage - Вводим текст '1234' в элемент: By.name: password
+2026-02-24 17:03:44.119 [main] INFO  page.LoginPage - Нажимаем на кнопку авторизации
+2026-02-24 17:03:44.120 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:03:44.259 [main] INFO  page.LoginPage - Отправляем запрос авторизации
+2026-02-24 17:03:45.025 [main] INFO  base.TestBase - Закрываем браузер
+2026-02-24 17:03:45.520 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:04:56.668 [main] INFO  base.TestBase - Запуск браузера Chrome
+2026-02-24 17:04:57.100 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:04:57.125 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:04:58.771 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:04:58.778 [main] INFO  base.BasePage - Открываем тестовую страницу: /login
+2026-02-24 17:04:58.779 [main] INFO  base.BasePage - Открываем страницу: http://localhost:5001/login
+2026-02-24 17:04:59.617 [main] INFO  base.BasePage - Переключаем локализацию на eng
+2026-02-24 17:04:59.618 [main] INFO  base.BasePage - Ожидаем исчезновения спиннера и открываем список доступных локализаций
+2026-02-24 17:05:00.908 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: [data-id='dropLang']
+2026-02-24 17:05:01.131 [main] INFO  base.BasePage - Выбираем локализацию с кодом: eng
+2026-02-24 17:05:01.206 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: a[data-id='eng']
+2026-02-24 17:05:02.048 [main] INFO  base.BasePage - Получаем текст кнопки выбора локализации
+2026-02-24 17:05:02.385 [main] INFO  base.TestBase - Закрываем браузер
+2026-02-24 17:05:02.744 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:05:02.947 [main] INFO  base.TestBase - Запуск браузера Chrome
+2026-02-24 17:05:02.981 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:05:02.993 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:05:04.282 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:05:04.282 [main] INFO  base.BasePage - Открываем тестовую страницу: /login
+2026-02-24 17:05:04.283 [main] INFO  base.BasePage - Открываем страницу: http://localhost:5001/login
+2026-02-24 17:05:05.125 [main] INFO  base.BasePage - Переключаем локализацию на rus
+2026-02-24 17:05:05.126 [main] INFO  base.BasePage - Ожидаем исчезновения спиннера и открываем список доступных локализаций
+2026-02-24 17:05:06.584 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: [data-id='dropLang']
+2026-02-24 17:05:06.745 [main] INFO  base.BasePage - Выбираем локализацию с кодом: rus
+2026-02-24 17:05:06.797 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: a[data-id='rus']
+2026-02-24 17:05:07.363 [main] INFO  base.BasePage - Получаем текст кнопки выбора локализации
+2026-02-24 17:05:07.594 [main] INFO  base.TestBase - Закрываем браузер
+2026-02-24 17:05:08.020 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:05:08.085 [main] INFO  base.TestBase - Запуск браузера Chrome
+2026-02-24 17:05:08.108 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:05:08.127 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:05:09.079 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:05:09.080 [main] INFO  page.LoginPage - Открываем страницу логина
+2026-02-24 17:05:09.081 [main] INFO  base.BasePage - Открываем страницу: http://localhost:5001/login
+2026-02-24 17:05:09.955 [main] INFO  page.LoginPage - Ожидание загрузки страницы авторизации
+2026-02-24 17:05:10.721 [main] INFO  page.LoginPage - Страница логина загружена
+2026-02-24 17:05:10.723 [main] INFO  base.BasePage - Вводим текст 'userInvalid' в элемент: By.name: login
+2026-02-24 17:05:10.870 [main] INFO  base.BasePage - Вводим текст '4321' в элемент: By.name: password
+2026-02-24 17:05:10.983 [main] INFO  page.LoginPage - Нажимаем на кнопку авторизации
+2026-02-24 17:05:10.984 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:05:11.150 [main] INFO  page.LoginPage - Отправляем запрос авторизации
+2026-02-24 17:05:11.151 [main] INFO  page.LoginPage - Проверяем появление ошибки авторизации
+2026-02-24 17:05:11.793 [main] INFO  base.TestBase - Закрываем браузер
+2026-02-24 17:05:12.171 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:05:12.179 [main] INFO  base.TestBase - Запуск браузера Chrome
+2026-02-24 17:05:12.198 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:05:12.211 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:05:13.323 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:05:13.324 [main] INFO  page.LoginPage - Открываем страницу логина
+2026-02-24 17:05:13.324 [main] INFO  base.BasePage - Открываем страницу: http://localhost:5001/login
+2026-02-24 17:05:14.353 [main] INFO  page.LoginPage - Ожидание загрузки страницы авторизации
+2026-02-24 17:05:15.090 [main] INFO  page.LoginPage - Страница логина загружена
+2026-02-24 17:05:15.092 [main] INFO  base.BasePage - Вводим текст 'user1' в элемент: By.name: login
+2026-02-24 17:05:15.240 [main] INFO  base.BasePage - Вводим текст '4321' в элемент: By.name: password
+2026-02-24 17:05:15.361 [main] INFO  page.LoginPage - Нажимаем на кнопку авторизации
+2026-02-24 17:05:15.362 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:05:15.503 [main] INFO  page.LoginPage - Отправляем запрос авторизации
+2026-02-24 17:05:15.504 [main] INFO  page.LoginPage - Проверяем появление ошибки авторизации
+2026-02-24 17:05:16.152 [main] INFO  base.TestBase - Закрываем браузер
+2026-02-24 17:05:16.566 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:05:16.576 [main] INFO  base.TestBase - Запуск браузера Chrome
+2026-02-24 17:05:16.593 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:05:16.601 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:05:17.583 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:05:17.584 [main] INFO  page.LoginPage - Открываем страницу логина
+2026-02-24 17:05:17.584 [main] INFO  base.BasePage - Открываем страницу: http://localhost:5001/login
+2026-02-24 17:05:18.687 [main] INFO  page.LoginPage - Ожидание загрузки страницы авторизации
+2026-02-24 17:05:19.409 [main] INFO  page.LoginPage - Страница логина загружена
+2026-02-24 17:05:19.411 [main] INFO  base.BasePage - Вводим текст 'userInvalid' в элемент: By.name: login
+2026-02-24 17:05:19.547 [main] INFO  base.BasePage - Вводим текст '1234' в элемент: By.name: password
+2026-02-24 17:05:19.656 [main] INFO  page.LoginPage - Нажимаем на кнопку авторизации
+2026-02-24 17:05:19.657 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:05:19.800 [main] INFO  page.LoginPage - Отправляем запрос авторизации
+2026-02-24 17:05:19.800 [main] INFO  page.LoginPage - Проверяем появление ошибки авторизации
+2026-02-24 17:05:20.445 [main] INFO  base.TestBase - Закрываем браузер
+2026-02-24 17:05:20.808 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:05:20.816 [main] INFO  base.TestBase - Запуск браузера Chrome
+2026-02-24 17:05:20.847 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:05:20.856 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:05:21.993 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:05:21.994 [main] INFO  page.LoginPage - Открываем страницу логина
+2026-02-24 17:05:21.994 [main] INFO  base.BasePage - Открываем страницу: http://localhost:5001/login
+2026-02-24 17:05:22.928 [main] INFO  page.LoginPage - Ожидание загрузки страницы авторизации
+2026-02-24 17:05:23.695 [main] INFO  page.LoginPage - Страница логина загружена
+2026-02-24 17:05:23.701 [main] INFO  base.BasePage - Вводим текст 'user1' в элемент: By.name: login
+2026-02-24 17:05:23.852 [main] INFO  base.BasePage - Вводим текст '1234' в элемент: By.name: password
+2026-02-24 17:05:23.963 [main] INFO  page.LoginPage - Нажимаем на кнопку авторизации
+2026-02-24 17:05:23.963 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:05:24.105 [main] INFO  page.LoginPage - Отправляем запрос авторизации
+2026-02-24 17:05:34.275 [main] INFO  base.TestBase - Закрываем браузер
+2026-02-24 17:05:35.450 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:32:37.307 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:32:37.342 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:32:39.041 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:32:39.044 [main] DEBUG base.BasePage - Открыта страница: LanguageSelectComponent
+2026-02-24 17:32:39.801 [main] DEBUG base.BasePage - Ожидание невидимости элемента: By.cssSelector: [id='spinner_overlay_page']
+2026-02-24 17:32:41.105 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: [data-id='dropLang']
+2026-02-24 17:32:41.155 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: [data-id='dropLang']
+2026-02-24 17:32:41.156 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: [data-id='dropLang']
+2026-02-24 17:32:41.336 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: a[data-id='eng']
+2026-02-24 17:32:41.388 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: a[data-id='eng']
+2026-02-24 17:32:41.388 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: a[data-id='eng']
+2026-02-24 17:32:41.971 [main] DEBUG base.BasePage - Получаем текст из элемента: By.cssSelector: [data-id='dropLang'] .footer-settings__text
+2026-02-24 17:32:41.975 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.cssSelector: [data-id='dropLang'] .footer-settings__text
+2026-02-24 17:32:42.138 [main] DEBUG base.BasePage - Получен текстЖ ENGLISH
+2026-02-24 17:32:42.632 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:32:42.834 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:32:42.844 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:32:43.907 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:32:43.907 [main] DEBUG base.BasePage - Открыта страница: LanguageSelectComponent
+2026-02-24 17:32:44.070 [main] DEBUG base.BasePage - Ожидание невидимости элемента: By.cssSelector: [id='spinner_overlay_page']
+2026-02-24 17:32:46.074 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: [data-id='dropLang']
+2026-02-24 17:32:46.120 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: [data-id='dropLang']
+2026-02-24 17:32:46.120 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: [data-id='dropLang']
+2026-02-24 17:32:46.284 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: a[data-id='rus']
+2026-02-24 17:32:46.366 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: a[data-id='rus']
+2026-02-24 17:32:46.366 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: a[data-id='rus']
+2026-02-24 17:32:46.956 [main] DEBUG base.BasePage - Получаем текст из элемента: By.cssSelector: [data-id='dropLang'] .footer-settings__text
+2026-02-24 17:32:46.956 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.cssSelector: [data-id='dropLang'] .footer-settings__text
+2026-02-24 17:32:47.056 [main] DEBUG base.BasePage - Получен текстЖ РУССКИЙ
+2026-02-24 17:32:47.772 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:32:47.950 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:32:47.959 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:32:49.032 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:32:49.033 [main] DEBUG base.BasePage - Открыта страница: LoginPage
+2026-02-24 17:32:50.743 [main] DEBUG page.LoginPage - На странице авторизации загружены элементы: By.name: login, By.name: password, By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:32:50.750 [main] DEBUG base.BasePage - Открыта страница: LoginPage
+2026-02-24 17:32:50.751 [main] DEBUG base.BasePage - Вводим текст 'userInvalid' в элемент: By.name: login
+2026-02-24 17:32:50.751 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: login
+2026-02-24 17:32:50.944 [main] DEBUG base.BasePage - Вводим текст '4321' в элемент: By.name: password
+2026-02-24 17:32:50.945 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: password
+2026-02-24 17:32:51.064 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:32:51.064 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:32:51.206 [main] DEBUG base.BasePage - Получаем текст из элемента: By.className: auth__error
+2026-02-24 17:32:51.207 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.className: auth__error
+2026-02-24 17:32:51.819 [main] DEBUG base.BasePage - Получен текстЖ Invalid login or password
+2026-02-24 17:32:52.268 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:32:52.302 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:32:52.310 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:32:53.400 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:32:53.401 [main] DEBUG base.BasePage - Открыта страница: LoginPage
+2026-02-24 17:32:55.043 [main] DEBUG page.LoginPage - На странице авторизации загружены элементы: By.name: login, By.name: password, By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:32:55.044 [main] DEBUG base.BasePage - Открыта страница: LoginPage
+2026-02-24 17:32:55.045 [main] DEBUG base.BasePage - Вводим текст 'user1' в элемент: By.name: login
+2026-02-24 17:32:55.045 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: login
+2026-02-24 17:32:55.240 [main] DEBUG base.BasePage - Вводим текст '4321' в элемент: By.name: password
+2026-02-24 17:32:55.240 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: password
+2026-02-24 17:32:55.365 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:32:55.365 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:32:55.506 [main] DEBUG base.BasePage - Получаем текст из элемента: By.className: auth__error
+2026-02-24 17:32:55.506 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.className: auth__error
+2026-02-24 17:32:56.093 [main] DEBUG base.BasePage - Получен текстЖ Invalid login or password
+2026-02-24 17:32:56.477 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:32:56.502 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:32:56.515 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:32:57.840 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:32:57.841 [main] DEBUG base.BasePage - Открыта страница: LoginPage
+2026-02-24 17:32:59.341 [main] DEBUG page.LoginPage - На странице авторизации загружены элементы: By.name: login, By.name: password, By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:32:59.343 [main] DEBUG base.BasePage - Открыта страница: LoginPage
+2026-02-24 17:32:59.343 [main] DEBUG base.BasePage - Вводим текст 'userInvalid' в элемент: By.name: login
+2026-02-24 17:32:59.343 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: login
+2026-02-24 17:32:59.516 [main] DEBUG base.BasePage - Вводим текст '1234' в элемент: By.name: password
+2026-02-24 17:32:59.516 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: password
+2026-02-24 17:32:59.634 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:32:59.635 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:32:59.779 [main] DEBUG base.BasePage - Получаем текст из элемента: By.className: auth__error
+2026-02-24 17:32:59.780 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.className: auth__error
+2026-02-24 17:33:00.377 [main] DEBUG base.BasePage - Получен текстЖ Invalid login or password
+2026-02-24 17:33:00.791 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-24 17:33:00.820 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-24 17:33:00.835 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-24 17:33:02.177 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
+2026-02-24 17:33:02.177 [main] DEBUG base.BasePage - Открыта страница: LoginPage
+2026-02-24 17:33:03.955 [main] DEBUG page.LoginPage - На странице авторизации загружены элементы: By.name: login, By.name: password, By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:33:03.956 [main] DEBUG base.BasePage - Открыта страница: LoginPage
+2026-02-24 17:33:03.957 [main] DEBUG base.BasePage - Вводим текст 'user1' в элемент: By.name: login
+2026-02-24 17:33:03.957 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: login
+2026-02-24 17:33:04.116 [main] DEBUG base.BasePage - Вводим текст '1234' в элемент: By.name: password
+2026-02-24 17:33:04.117 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.name: password
+2026-02-24 17:33:04.237 [main] INFO  base.BasePage - Кликаем по элементу: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:33:04.238 [main] DEBUG base.BasePage - Ожидание кликабельности элемента: By.cssSelector: .sign-in__button.j-button-submit
+2026-02-24 17:33:04.381 [main] DEBUG base.BasePage - Получаем текст из элемента: By.id: logout
+2026-02-24 17:33:04.381 [main] DEBUG base.BasePage - Ожидание видимости элемента: By.id: logout
+2026-02-24 17:33:14.871 [main] INFO  base.TestBase - ? Браузер закрыт

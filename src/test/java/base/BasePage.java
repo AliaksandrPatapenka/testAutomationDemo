@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 public abstract class BasePage  {
     protected WebDriver driver;
     protected WebDriverWait wait;
-        protected static final Logger log = LoggerFactory.getLogger(BasePage.class);
+    protected static final Logger log = LoggerFactory.getLogger(BasePage.class);
 
     /**
      * КОНСТРУКТОР
@@ -22,7 +22,6 @@ public abstract class BasePage  {
     public BasePage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(TestData.DEFAULT_TIMEOUT));
-        log.debug("Открыта страница: {}", this.getClass().getSimpleName());
     }
 
     /**
@@ -53,26 +52,21 @@ public abstract class BasePage  {
     }
 
     protected void enterText(By locator, String text) {
-        log.debug("Вводим текст '{}' в элемент: {}", text, locator);
         WebElement element = elementToBeClickable(locator);
         element.clear();
         element.sendKeys(text);
     }
 
     protected void clickButton(By locator) {
-        log.info("Кликаем по элементу: {}", locator);
         WebElement element = elementToBeClickable(locator);
         element.click();
-
     }
 
     /**
      * МЕТОДЫ ПОЛУЧЕНИЯ ДАННЫХ.
      */
     public String getText(By locator) {
-        log.debug("Получаем текст из элемента: {}", locator);
         WebElement element = visibilityOfElementLocated(locator);
-        log.debug("Получен текстЖ {}", element.getText());
         return element.getText();
     }
 }

@@ -6,14 +6,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Элементы и действия страницы авторизации
  */
 public class LoginPage extends BasePage {
-    protected static final Logger log = LoggerFactory.getLogger(LoginPage.class);
     public LoginPage(WebDriver driver) {
         super(driver);
     }
@@ -64,7 +61,6 @@ public class LoginPage extends BasePage {
                 ExpectedConditions.elementToBeClickable(usernameField),
                 ExpectedConditions.elementToBeClickable(passwordField),
                 ExpectedConditions.elementToBeClickable(loginButton)));
-        log.debug("На странице авторизации загружены элементы: {}, {}, {}", usernameField, passwordField, loginButton);
     }
 
     public String getAuthInvalid(){
