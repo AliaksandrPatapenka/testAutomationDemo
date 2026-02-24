@@ -49,23 +49,21 @@ public abstract class BasePage  {
 
     public void openPage(String path) {
         String url = TestData.BASE_URL + path;
-        log.info("Открываем страницу: {}", url);
         driver.get(url);
     }
 
     protected void enterText(By locator, String text) {
-        log.info("Вводим текст '{}' в элемент: {}", text, locator);
+        log.debug("Вводим текст '{}' в элемент: {}", text, locator);
         WebElement element = elementToBeClickable(locator);
         element.clear();
         element.sendKeys(text);
-        log.debug("Текст введен");
     }
 
     protected void clickButton(By locator) {
         log.info("Кликаем по элементу: {}", locator);
         WebElement element = elementToBeClickable(locator);
         element.click();
-        log.debug("Клик выполнен");
+
     }
 
     /**

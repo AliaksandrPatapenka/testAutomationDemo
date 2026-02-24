@@ -31,24 +31,19 @@ public class LoginPage extends BasePage {
      * МЕТОДЫ ДЕЙСТВИЙ
      */
     public void openPageLogin() {
-        log.info("Открываем страницу логина");
         openPage(TestData.LOGIN_URL);
         waitPage();
-        log.info("Страница логина загружена");
     }
 
     private void enterUsername(String username) {
-        log.debug("Вводим логин: {}", username);
         enterText(usernameField, username);
     }
 
     private void enterPassword(String password) {
-        log.debug("Вводим пароль: {}", password);
         enterText(passwordField, password);
     }
 
     private void clickLoginButton() {
-        log.info("Нажимаем на кнопку авторизации");
         clickButton(loginButton);
     }
 
@@ -59,39 +54,31 @@ public class LoginPage extends BasePage {
         enterUsername(username);
         enterPassword(password);
         clickLoginButton();
-        log.info("Отправляем запрос авторизации");
     }
 
     /**
      * МЕТОДЫ ПРОВЕРОК
      */
     public void waitPage() {
-        log.info("Ожидание загрузки страницы авторизации");
         wait.until(ExpectedConditions.and(
                 ExpectedConditions.elementToBeClickable(usernameField),
                 ExpectedConditions.elementToBeClickable(passwordField),
                 ExpectedConditions.elementToBeClickable(loginButton)));
-        log.debug("Страница авторизации загружена");
+        log.debug("На странице авторизации загружены элементы: {}, {}, {}", usernameField, passwordField, loginButton);
     }
 
     public String getAuthInvalid(){
-        log.info("Проверяем появление ошибки авторизации");
         try {
-            log.debug("Получен текст ошибки: {}", getText(authError));
             return getText(authError);
         } catch (TimeoutException error){
-            log.debug("Элемент с ошибкой не появился");
             return null;
         }
     }
 
     public String getAuthSuccess(){
-        log.debug("Проверяем успешную авторизацию (появление кнопки выхода)");
         try {
-            log.debug("Кнопка выхода появилась, текст: '{}'", getText(logoutButton));
             return  getText(logoutButton);
         } catch (TimeoutException error){
-            log.debug("Кнопка выхода не появилась. Текущий URL: {}", driver.getCurrentUrl());
             return null;
         }
     }

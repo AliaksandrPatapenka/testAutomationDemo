@@ -14,7 +14,6 @@ public class TestBase {
     protected static final Logger log = LoggerFactory.getLogger(TestBase.class);
 
     public void setUp() {
-        log.info("Запуск браузера Chrome");
         WebDriverManager.chromedriver().setup(); //Настраивает и инициализирует тестовое окружение.
         driver = new ChromeDriver(); //Устанавливает драйвер Chrome
         driver.manage().window().maximize(); //Максимизирует окно браузера
@@ -23,7 +22,6 @@ public class TestBase {
 
     public void tearDown(){
         if (driver != null) {
-            log.info("Закрываем браузер");
             driver.quit();
             log.info("✅ Браузер закрыт");
         } //Закрывает браузер и освобождает ресурсы WebDriver, если он был инициализирован.
