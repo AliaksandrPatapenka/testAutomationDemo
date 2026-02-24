@@ -42,6 +42,7 @@ public abstract class BasePage  {
         log.debug("Ожидание невидимости элемента: {}", locator);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
+
         /**
      * МЕТОДЫ ДЕЙСТВИЙ
      */
