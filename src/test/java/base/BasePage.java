@@ -10,7 +10,6 @@ import java.time.Duration;
       * Содержит общие методы и константы для работы с WebDriver.
       */
 public abstract class BasePage  {
-
     protected WebDriver driver;
     protected WebDriverWait wait;
 
@@ -37,12 +36,12 @@ public abstract class BasePage  {
         wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
 
-    /**
+        /**
      * МЕТОДЫ ДЕЙСТВИЙ
      */
 
     public void openPage(String path) {
-        String url = TestData.BASE_PROTOCOL + TestData.BASE_DOMAIN + TestData.BASE_PORT + path;
+        String url = TestData.BASE_URL + path;
         driver.get(url);
     }
 

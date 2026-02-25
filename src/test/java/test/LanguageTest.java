@@ -20,20 +20,20 @@ public class LanguageTest extends TestBase {
                  languageSelectComponent.getLanguageButtonText()
         );
         step("Проверяем, что язык изменился на " + expectedTextLanguage, () ->
-            Assertions.assertEquals(expectedTextLanguage, actualText, " ❌ Язык не совпадает с выбранным"));
+            Assertions.assertEquals(expectedTextLanguage, actualText, "❌ Язык не совпадает с выбранным"));
 
     }
 
     @BeforeEach
     public void setupTest() {
-        step("Запускаем браузер", this::setUp);
-        step("Создаем драйвер", () -> languageSelectComponent = new LanguageSelectComponent(driver));
-        step("Открываем страницу авторизации", () -> languageSelectComponent.openTestPage(TestData.LOGIN_URL));
+        setUp();
+        languageSelectComponent = new LanguageSelectComponent(driver);
+        languageSelectComponent.openTestPage(TestData.LOGIN_URL);
     }
 
     @AfterEach
     public void tearDownTest(){
-        step("Закрыли браузер", this::tearDown);
+        tearDown();
     }
 
     /**
@@ -46,7 +46,7 @@ public class LanguageTest extends TestBase {
     //@Step("Выбор языка {language}")
     public void selectLanguageEng(){
         step("Выбрали " + TestData.EXPECTED_TEXT_LANGUAGE_ENG + " язык", () ->
-                selectLanguage(TestData.LANGUAGE_ENG, TestData.EXPECTED_TEXT_LANGUAGE_ENG));
+                selectLanguage(TestData.LANGUAGE_CODE_ENG, TestData.EXPECTED_TEXT_LANGUAGE_ENG));
     }
 
     /**
@@ -59,6 +59,6 @@ public class LanguageTest extends TestBase {
     //@Step("Выбор языка {language}")
     public void selectLanguageRus(){
         step ("Выбрали " + TestData.EXPECTED_TEXT_LANGUAGE_RUS + " язык", () ->
-                selectLanguage(TestData.LANGUAGE_RUS, TestData.EXPECTED_TEXT_LANGUAGE_RUS));
+                selectLanguage(TestData.LANGUAGE_CODE_RUS, TestData.EXPECTED_TEXT_LANGUAGE_RUS));
     }
 }

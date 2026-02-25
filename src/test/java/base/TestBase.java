@@ -4,8 +4,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.time.Duration;
-
 /**
  * Базовый класс для настройки и управления тестовым окружением WebDriver.
  */
@@ -18,13 +16,9 @@ public class TestBase {
         driver.manage().window().maximize(); //Максимизирует окно браузера
     }
 
-    public void tearDown (){
+    public void tearDown(){
         if (driver != null) {
             driver.quit();
         } //Закрывает браузер и освобождает ресурсы WebDriver, если он был инициализирован.
-    }
-
-    public WebDriver getDriver() {
-        return driver;
     }
 }

@@ -2,6 +2,7 @@ package page;
 
 import base.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 
 /**
@@ -15,7 +16,7 @@ public class LanguageSelectComponent extends BasePage {
     /**
      * ЛОКАТОРЫ
      */
-    private final By langButton = By.cssSelector("[data-id='dropLang']");
+    private final By langButton = By.cssSelector("[data-id='dropLang111111']");
     private final By languageButtonText = By.cssSelector("[data-id='dropLang'] .footer-settings__text");
     private By langButtonByCode(String langCode) {
         return By.cssSelector("a[data-id='" + langCode + "']");
@@ -53,7 +54,11 @@ public class LanguageSelectComponent extends BasePage {
      *МЕТОДЫ ПРОВЕРОК
      */
     public String getLanguageButtonText() {
-        visibilityOfElementLocated(languageButtonText);
-        return getText(languageButtonText);
+        try {
+            return getText(languageButtonText);
+        } catch (TimeoutException error) {
+            return null;
+        }
+
     }
 }
