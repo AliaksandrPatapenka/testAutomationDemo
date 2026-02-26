@@ -9,9 +9,11 @@ import org.openqa.selenium.WebDriver;
 import java.io.ByteArrayInputStream;
 
 public class ScreenshotListener implements TestWatcher {
+    private WebDriver driver;  // ← добавил поле
 
-
-
+    public ScreenshotListener(WebDriver driver) {  // ← конструктор с driver
+        this.driver = driver;
+    }
     @Override
     public void testFailed(ExtensionContext context, Throwable cause) {
         WebDriver driver = (WebDriver) context.getStore(ExtensionContext.Namespace.GLOBAL).get("driver");

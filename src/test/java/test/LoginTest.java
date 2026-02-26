@@ -14,7 +14,7 @@ import static io.qameta.allure.Allure.step;
  */
 public class LoginTest extends TestBase {
     @RegisterExtension
-    ScreenshotListener screenshotListener = new ScreenshotListener();
+    ScreenshotListener screenshotListener = new ScreenshotListener(driver);
 
     private LoginPage loginPage;
 
