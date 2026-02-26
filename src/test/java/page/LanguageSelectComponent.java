@@ -16,7 +16,7 @@ public class LanguageSelectComponent extends BasePage {
     /**
      * ЛОКАТОРЫ
      */
-    private final By langButton = By.cssSelector("[data-id='dropLang111111']");
+    private final By langButton = By.cssSelector("[data-id='dropLang']");
     private final By languageButtonText = By.cssSelector("[data-id='dropLang'] .footer-settings__text");
     private By langButtonByCode(String langCode) {
         return By.cssSelector("a[data-id='" + langCode + "']");

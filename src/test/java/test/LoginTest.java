@@ -3,7 +3,9 @@ package test;
 import base.TestBase;
 import base.TestData;
 import helpers.AuthHelper;
+import listeners.ScreenshotListener;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.RegisterExtension;
 import page.LoginPage;
 import static io.qameta.allure.Allure.step;
 
@@ -11,6 +13,9 @@ import static io.qameta.allure.Allure.step;
  * Авторизация. Тесты
  */
 public class LoginTest extends TestBase {
+    @RegisterExtension
+    ScreenshotListener screenshotListener = new ScreenshotListener();
+
     private LoginPage loginPage;
 
     private void authInvalid(String login, String password){
