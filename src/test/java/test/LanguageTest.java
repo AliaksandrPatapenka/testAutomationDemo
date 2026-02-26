@@ -8,7 +8,6 @@ import org.junit.jupiter.api.extension.RegisterExtension;
 import page.LanguageSelectComponent;
 import static io.qameta.allure.Allure.step;
 
-
 /**
  * Язык интерфейса. Тесты
  */
