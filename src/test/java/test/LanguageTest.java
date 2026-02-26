@@ -2,8 +2,8 @@ package test;
 
 import base.TestBase;
 import base.TestData;
-import listeners.ScreenshotListener;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.RegisterExtension;
 import page.LanguageSelectComponent;
 import static io.qameta.allure.Allure.step;
@@ -13,9 +13,6 @@ import static io.qameta.allure.Allure.step;
  * Язык интерфейса. Тесты
  */
 public class LanguageTest extends TestBase {
-    @RegisterExtension
-    ScreenshotListener screenshotListener = new ScreenshotListener(driver);
-
     private LanguageSelectComponent languageSelectComponent;
 
     private void selectLanguage(String language, String expectedTextLanguage){
@@ -30,7 +27,7 @@ public class LanguageTest extends TestBase {
     }
 
     @BeforeEach
-    public void setupTest() {
+    public void setupTest(ExtensionContext context) {
         setUp();
         languageSelectComponent = new LanguageSelectComponent(driver);
         languageSelectComponent.openTestPage(TestData.LOGIN_URL);

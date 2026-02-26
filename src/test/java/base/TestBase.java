@@ -4,9 +4,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
-
-
 /**
  * Базовый класс для настройки и управления тестовым окружением WebDriver.
  */
