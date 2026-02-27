@@ -24,7 +24,6 @@ public class LoginTest extends TestBase {
     public void setUpTest(){
         setUp();
         loginPage = new LoginPage(driver);
-        loginPage.openPageLogin();
     }
 
     @AfterEach
