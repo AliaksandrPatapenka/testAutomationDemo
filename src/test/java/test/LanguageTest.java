@@ -26,7 +26,7 @@ public class LanguageTest extends TestBase {
     }
 
     @BeforeEach
-    public void setupTest(ExtensionContext context) {
+    public void setupTest() {
         setUp();
         languageSelectComponent = new LanguageSelectComponent(driver);
         languageSelectComponent.openTestPage(TestData.LOGIN_URL);
