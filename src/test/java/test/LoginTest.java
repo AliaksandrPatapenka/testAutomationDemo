@@ -11,7 +11,7 @@ import static io.qameta.allure.Allure.step;
  * Авторизация. Тесты
  */
 public class LoginTest extends TestBase {
-    private LoginPage loginPage;
+    private LoginPage  loginPage;
 
     private void authInvalid(String login, String password){
         AuthHelper.login(driver,login, password);
