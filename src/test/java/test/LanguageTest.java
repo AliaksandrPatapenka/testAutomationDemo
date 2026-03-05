@@ -3,9 +3,10 @@ package test;
 import base.TestBase;
 import base.TestData;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtensionContext;
+import org.junit.jupiter.api.extension.RegisterExtension;
 import page.LanguageSelectComponent;
 import static io.qameta.allure.Allure.step;
-
 
 /**
  * Язык интерфейса. Тесты

@@ -393,3 +393,119 @@
 2026-02-24 17:55:29.980 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
 2026-02-24 17:55:31.354 [main] INFO  base.TestBase - ? Браузер запущен и развернут на весь экран
 2026-02-24 17:55:44.959 [main] INFO  base.TestBase - ? Браузер закрыт
+2026-02-25 13:44:22.902 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:44:22.930 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:44:41.613 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:44:41.623 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:44:56.726 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:44:56.773 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:45:01.792 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:45:01.802 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:45:06.588 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:45:06.596 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:45:11.409 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:45:11.418 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:47:39.429 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:47:39.468 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:47:45.027 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:47:45.036 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:48:00.533 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:48:00.547 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:48:05.295 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:48:05.303 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:48:09.469 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:48:09.478 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:48:13.453 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:48:13.462 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:53:51.370 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:53:51.396 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:53:57.382 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:53:57.395 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:54:11.610 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:54:11.618 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:54:15.403 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:54:15.413 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:54:19.372 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:54:19.380 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-25 13:54:23.258 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-25 13:54:23.267 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:30:30.332 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:30:30.367 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:30:39.391 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:30:39.400 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:30:53.973 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:30:53.997 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:30:58.175 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:30:58.185 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:31:01.956 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:31:01.964 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:31:05.539 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:31:05.547 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:38:16.729 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:38:16.755 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:38:23.095 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:38:23.104 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:38:37.899 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:38:37.909 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:38:42.435 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:38:42.444 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:38:46.698 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:38:46.707 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:38:51.101 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:38:51.114 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:52:25.071 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:52:25.099 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:52:27.132 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:52:27.177 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:52:28.926 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:52:28.991 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:52:30.841 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:52:30.876 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:59:13.016 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:59:13.053 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:59:18.481 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:59:18.502 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:59:22.153 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:59:22.162 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-26 13:59:25.854 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-26 13:59:25.865 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 11:12:02.184 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 11:12:02.211 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 11:12:10.005 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 11:12:10.013 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 11:12:14.973 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 11:12:14.981 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 11:12:19.480 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 11:12:19.491 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 15:55:15.585 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 15:55:15.622 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 15:55:23.189 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 15:55:23.199 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 15:55:27.329 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 15:55:27.339 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 15:55:32.426 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 15:55:32.436 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 16:01:37.001 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 16:01:37.044 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 16:01:42.778 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 16:01:42.787 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 16:01:47.708 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 16:01:47.717 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 16:01:52.141 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 16:01:52.150 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 16:01:56.416 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 16:01:56.434 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 16:02:00.735 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 16:02:00.743 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 16:07:09.703 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 16:07:09.735 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 16:07:14.918 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 16:07:14.930 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 16:07:20.715 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 16:07:20.729 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 16:07:24.598 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 16:07:24.606 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 16:07:28.408 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 16:07:28.416 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-27 16:07:32.216 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-27 16:07:32.224 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kovaa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
