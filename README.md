@@ -46,16 +46,16 @@ src/
 **Примеры отчётов:**
 
 ### Проверка успешной авторизации 
-![Allure screen1](screenshots/screen1.png)
+![Allure screen1](screenshots/screen1.jpg)
 
 ### Проверка успешного выбора локализации
-![Allure screen2](screenshots/screen2.png)
+![Allure screen2](screenshots/screen2.jpg)
 
 ### Ошибка при авторизации
-![Allure screen3](screenshots/screen3.png)
+![Allure screen3](screenshots/screen3.jpg)
 
 ### Ошибка при выборе локализации
-![Allure screen4](screenshots/screen4.png)
+![Allure screen4](screenshots/screen4.jpg)
 
 ## Команда для запуска тестов с отчётом
 ```bash
