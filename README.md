@@ -40,3 +40,23 @@ src/
 **AuthHelper**
 - Содержит метод для авторизации
 - Переиспользуется в разных тестовых классах
+
+## Отчётность Allure
+
+**Примеры отчётов:**
+
+### Проверка успешной авторизации 
+![Allure screen1](screenshots/screen1.png)
+
+### Проверка успешного выбора локализации
+![Allure screen2](screenshots/screen2.png)
+
+### Ошибка при авторизации
+![Allure screen3](screenshots/screen3.png)
+
+### Ошибка при выборе локализации
+![Allure screen4](screenshots/screen4.png)
+
+## Команда для запуска тестов с отчётом
+```bash
+mvnw.cmd clean test & mvnw.cmd allure:serve
